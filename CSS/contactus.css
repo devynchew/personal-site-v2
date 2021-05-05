@@ -1,0 +1,43 @@
+@charset "utf-8";
+
+/* Navigation Bar Styles */
+.nav-link {
+    color: black !important;
+}
+
+.nav-link:hover {
+    color: white !important;
+    background-color: #515052;
+}
+
+.brand {
+    font-size: 2rem;
+    color: #82A0BC;
+}
+
+#firstSection {
+    margin-top: 66px;
+}
+
+/* Row Styles */
+.firstrow {
+    padding-left: 25%;
+    padding-right: 15%;
+    padding-top: 5%;
+}
+
+/* Paragraph styles */
+#disclaimer {
+    font-size: 0.8rem;
+}
+
+/* Button Styles */
+#letstalkbtn {
+    background-color: #5998C5;
+    color: white;
+}
+
+#letstalkbtn:hover {
+    background-color: #EEA243;
+    color: white;
+}

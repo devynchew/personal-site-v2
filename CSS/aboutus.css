@@ -1,0 +1,36 @@
+@charset "utf-8";
+
+/* Navigation bar styles */
+.nav-link {
+    color: black !important;
+}
+
+.nav-link:hover {
+    color: white !important;
+    background-color: #515052;
+}
+
+.brand {
+    font-size: 2rem;
+    color: #82A0BC;
+}
+
+#firstSection {
+    margin-top: 66px;
+}
+
+/* Background styles */
+.first {
+    background-color: #F0F7F4;
+} 
+
+.second {
+    background-color: #588BAE;
+    color: white;
+}
+
+/* Icon Styles */
+.icon {
+    font-size: 3.8rem;
+    padding-bottom: 10%;
+}
