@@ -1,10 +1,13 @@
 @charset "utf-8";
 /*import Fira Mono font*/
-@import url('http://fonts.cdnfonts.com/css/fira-mono');
+@font-face {
+    font-family: FiraMono;
+    src: url(../font/FiraMono-Regular.ttf);
+}
 
 /* Variables */
 :root {
-    --font-family: "Fira Mono", sans-serif;
+    --font-family: "FiraMono", sans-serif;
     --primary-shadow: #8b8eaf;
     --secondary-shadow: #a17a69;
 }
