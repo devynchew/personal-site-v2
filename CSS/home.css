@@ -1,4 +1,17 @@
 @charset "utf-8";
+/*import Fira Mono font*/
+@import url('http://fonts.cdnfonts.com/css/fira-mono');
+
+/* Variables */
+:root {
+    --font-family: "Fira Mono", sans-serif;
+    --primary-shadow: #8b8eaf;
+}
+/* Variables end */
+
+body {
+    font-family: var(--font-family);
+}
 
 /* Navigation bar styles */
 .nav-link {
@@ -11,9 +24,7 @@
 }
 
 /* Navigation link styles */
-.nav-link2:hover {
-    color: black;
-}
+
 
 /* Brand style */
 .brand {
@@ -71,5 +82,19 @@
 /* Layout Styles */
 .teacher {
     padding-left: 10% !important;
+}
+.body {
+    padding-right: 0px;
+    padding-left: 0px;
+    max-width: 2000px;
+}
+
+#boxshadow {
+    box-shadow: 0px 2px 15px 2px var(--primary-shadow);
+    border-radius: 6px;
+}
+
+#aboutmecontainer {
+    padding-top: 5rem;
 }
 

@@ -8,16 +8,17 @@
     <link rel="stylesheet" href="./CSS/bootstrap.min.css">
     <link rel="stylesheet" href="./CSS/home.css">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <title>BookSmart Homepage</title>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <title>Devyn Chew | Software Developer</title>
 
 </head>
 
-<body class="container">
+<body class="container body">
     <header>
         <nav class="navbar navbar-expand-md bg-light navbar-light fixed-top">
             <!-- Brand/logo -->
             <a class="navbar-brand" href="#">
-                <span class="brand fas fa-graduation-cap"></span>
+                Devyn Chew
             </a>
 
             <!-- Collapsible Button -->
@@ -26,39 +27,40 @@
             </button>
 
             <!-- Navbar Links -->
-            <div class="collapse navbar-collapse justify-content-center" id="collapsibleNavbar">
+            <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
                 <ul class="navbar-nav nav-fill">
-                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./HTML/aboutus.html">About Us</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./HTML/schools.html">Schools</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./HTML/products.html">Products</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./HTML/contactus.html">Contact Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./HTML/aboutus.html">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./HTML/schools.html">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./HTML/products.html">Contact</a></li>
                 </ul>
             </div>
         </nav>
     </header>
 
     <main>
-        <img id="picture1" class="w-100" src="./Photos/home.jpg" alt="Home" />
 
         <!-- First Section -->
-        <section class="bg-light">
-            <h1 class="text-center pt-5"><small>Create Inspired Learning Experiences</small></h1>
-            <h4 class="text-center"><small>Learn how BookSmart can help you</small></h4>
+        <section>
 
-            <div class="row no-gutters">
+            <div class="row no-gutters pt-5">
                 <div class="col-md-6">
-                    <span id="appleicon" class="fas fa-apple-alt text-center w-100 pt-5"></span>
-                    <p class="text-center">Capture Young Minds</p>
-                    <p class="text-center pb-5 font-weight-bold"><a class="nav-link2" href="./HTML/schools.html">Explore
-                            BookSmart for schools ></a></p>
+                    <lottie-player class="w-100" src="./JSON/drawkit-grape-animation-2-LOOP.json"
+                        background="transparent" speed="1" style="width: 50rem; height: 30rem;" loop autoplay>
+                    </lottie-player>
                 </div>
                 <div class="col-md-6">
-                    <span id="studenticon" class="firsticons fas fa-user-graduate text-center w-100 pt-5"></span>
-                    <p class="text-center">Drive Learner Success</p>
-                    <p class="text-center pb-5 font-weight-bold"><a class="nav-link2"
-                            href="./HTML/schools.html#higherEducation">Explore
-                            BookSmart for Higher Education ></a></p>
+                    <div id="aboutmecontainer">
+                        <div id="boxshadow" class="w-75 mx-auto">
+                            <h2 class="text-center pt-2">About Me</h2>
+                            <p class="text-center px-4 pb-4">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia sed
+                                dolorem fugit sapiente porro veniam pariatur dolore nostrum delectus
+                                inventore tempore minus nemo, iste ullam illo laboriosam maiores
+                                repudiandae quos!
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -78,7 +80,8 @@
                         and our discussions are so much more productive!! Me and my fellow teachers have been using it
                         since,
                         and we don't plan to go back anytime soon.</blockquote>
-                    <a href="./HTML/aboutus.html" type="button" id="readmorebtn" class="btn btn-block w-25 mx-auto btn-sm">Read
+                    <a href="./HTML/aboutus.html" type="button" id="readmorebtn"
+                        class="btn btn-block w-25 mx-auto btn-sm">Read
                         more</a>
                 </div>
             </div>
@@ -109,7 +112,8 @@
                     <p class="py-2 text-center">Would you like to talk to a real person? We are more than happy to help
                         you.</p>
 
-                    <a href="./HTML/contactus.html" type="button" id="letstalkbtn" class="btn btn-block w-25 mx-auto btn-sm mb-5">Let's talk</a>
+                    <a href="./HTML/contactus.html" type="button" id="letstalkbtn"
+                        class="btn btn-block w-25 mx-auto btn-sm mb-5">Let's talk</a>
                 </div>
             </div>
         </aside>
