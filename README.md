@@ -1,3 +1,3 @@
 # devynchew.github.io
 
-A website I made, inspired by E-learning platforms online.
+An e-portfolio website I made to showcase me, my skills and my projects.
