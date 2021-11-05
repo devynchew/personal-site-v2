@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="./CSS/bootstrap.min.css">
     <link rel="stylesheet" href="./CSS/home.css">
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <title>Devyn Chew | Software Developer</title>
 
@@ -15,11 +14,13 @@
 
 <body class="container body">
     <header>
-        <nav class="navbar navbar-expand-md bg-light navbar-light fixed-top">
+        <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top pl-5">
             <!-- Brand/logo -->
             <a class="navbar-brand" href="#">
                 Devyn Chew
             </a>
+
+            
 
             <!-- Collapsible Button -->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
@@ -29,10 +30,10 @@
             <!-- Navbar Links -->
             <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
                 <ul class="navbar-nav nav-fill">
-                    <li class="nav-item"><a class="nav-link" href="#">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./HTML/aboutus.html">Skills</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./HTML/schools.html">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./HTML/products.html">Contact</a></li>
+                    <li class="nav-item"><a target="_blank" class="navbar-brand" href="https://github.com/devynchew"><img src="Photos/github.png" alt="github" style="width:40px;"></a></li>
+                    <li class="nav-item"><a target="_blank" class="navbar-brand" href="https://www.linkedin.com/in/devyn-chew-798653126/"><img src="Photos/linkedin.png" alt="linkedin" style="width:40px;"></a></li>
+                    <li class="nav-item"><a target="_blank" class="navbar-brand" href="https://www.instagram.com/devyn_chew/"><img src="Photos/instagram.png" alt="instagram" style="width:40px;"></a></li>
+                    <li class="nav-item"><a target="_blank" class="navbar-brand" href="mailto:devynchew@gmail.com"><img src="Photos/mail.png" alt="mail" style="width:40px;"></a></li>
                 </ul>
             </div>
         </nav>
@@ -43,7 +44,7 @@
         <!-- First Section -->
         <section>
 
-            <div class="row no-gutters pt-5">
+            <div class="row no-gutters firstrow">
                 <div class="col-md-6">
                     <lottie-player class="w-100" src="./JSON/drawkit-grape-animation-2-LOOP.json"
                         background="transparent" speed="1" style="width: 50rem; height: 30rem;" loop autoplay>
@@ -54,10 +55,7 @@
                         <div id="boxshadow" class="w-75 mx-auto">
                             <h2 class="text-center pt-2">About Me</h2>
                             <p class="text-center px-4 pb-4">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia sed
-                                dolorem fugit sapiente porro veniam pariatur dolore nostrum delectus
-                                inventore tempore minus nemo, iste ullam illo laboriosam maiores
-                                repudiandae quos!
+                                Hello, I'm Devyn. I'm a 22 y/o software developer student in Singapore, studying Applied AI and Analytics. I have a keen interest in front-end and back-end software development. Let's get to know each other!
                             </p>
                         </div>
                     </div>
@@ -66,29 +64,163 @@
         </section>
 
         <!-- Second Section -->
-        <aside class="second">
-            <div class="customers row no-gutters pt-3 pb-5">
-                <div class="col-lg-5 py-5 teacher">
-                    <img class="w-50 rounded-circle float-left ml-1 mr-4" src="./Photos/teacher.jpg" alt="Teacher" />
-                    <p class="font-weight-bold pt-4">Sally Sanders</p>
-                    <p>Educator, School of <br>Oakload University</p>
-
+        <aside class="pb-5">
+            <h2 class="text-center pb-4">My Projects</h2>
+            <!-- First Row for large -->
+            <div class="row no-gutters d-none d-lg-flex projects">
+                <div class="col-lg-4 px-4">
+                    <button type="button" class="btn" data-toggle="modal" data-target="#myModal"><img src="Photos/lms.PNG" class="w-100 mx-auto d-block icon-card icon"></img></button>
+                    <p class="text-center font-weight-bold">BookSmart</p>
+                    <p class="text-center">html5/css3/bootstrap4/js-es6</p>
                 </div>
-                <div class="col-lg-7 pt-5 px-5">
-                    <blockquote class="py-3 justify-content-center">BookSmart has changed the lives of my students. They
-                        are now more engaged in learning
-                        and our discussions are so much more productive!! Me and my fellow teachers have been using it
-                        since,
-                        and we don't plan to go back anytime soon.</blockquote>
-                    <a href="./HTML/aboutus.html" type="button" id="readmorebtn"
-                        class="btn btn-block w-25 mx-auto btn-sm">Read
-                        more</a>
+                <div class="col-lg-4 px-4">
+                    <img src="Photos/bot.png" class="w-100 mx-auto d-block icon-card icon"></img>
+                    <p class="text-center font-weight-bold">Telegram Customer Support Bot</p>
+                    <p class="text-center">python/flask</p>
+                </div>
+                <div class="col-lg-4 px-4">
+                    <img src="Photos/hangman.png" class="w-100 mx-auto d-block icon-card icon"></img>
+                    <p class="text-center font-weight-bold">Hangman Game</p>
+                    <p class="text-center">js-es6</p>
+                </div>
+            </div>
+            <!-- The Modal -->
+            <div class="modal" id="myModal">
+                <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+            
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                    <h4 class="modal-title">Modal Heading</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+            
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                    Modal body..
+                    </div>
+            
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                    </div>
+            
+                </div>
+                </div>
+            </div>
+
+            <!-- First Row for medium -->
+            <div class="row no-gutters d-lg-none projectsmedium">
+                <div class="col-md-6 px-1">
+                    <img src="Photos/html5.png" class="w-100 mx-auto d-block icon-card icon"></img>
+                    <p class="text-center font-weight-bold">HTML5</p>
+                </div>
+                <div class="col-md-6 px-1">
+                    <img src="Photos/css3.png" class="w-100 mx-auto d-block icon-card icon"></img>
+                    <p class="text-center font-weight-bold">CSS3</p>
+                </div>
+            </div>
+
+            <!-- Second Row for medium -->
+            <div class="row no-gutters d-lg-none projectsmedium">
+                <div class="col-md-6 px-1">
+                    <img src="Photos/js.png" class="w-100 mx-auto d-block icon-card"></img>
+                    <p class="text-center font-weight-bold">Javascript-ES6</p>
+                </div>
+                <div class="col-md-6 px-1">
+                    <img src="Photos/react.png" class="w-100 mx-auto d-block icon-card"></img>
+                    <p class="text-center font-weight-bold">React</p>
+                </div>
+            </div>
+
+            <!-- Third Row for medium -->
+            <div class="row no-gutters d-lg-none projectsmedium">
+                <div class="col-md-6 px-1">
+                    <img src="Photos/python3.png" class="w-100 mx-auto d-block icon-card"></img>
+                    <p class="text-center font-weight-bold">Python</p>
+                </div>
+                <div class="col-md-6 px-1">
+                    <img src="Photos/git.png" class="w-100 mx-auto d-block icon-card"></img>
+                    <p class="text-center font-weight-bold">Git</p>
                 </div>
             </div>
         </aside>
 
         <!-- Third Section -->
-        <aside class="bg-light">
+        <aside class="pb-5">
+            <h2 class="text-center pb-4">My Top Skills</h2>
+            <!-- First Row for large -->
+            <div class="row no-gutters d-none d-lg-flex skills">
+                <div class="col-lg-4 px-1">
+                    <img src="Photos/html5.png" class="w-100 mx-auto d-block icon-card"></img>
+                    <p class="text-center font-weight-bold">HTML5</p>
+
+                </div>
+                <div class="col-lg-4 px-1">
+                    <img src="Photos/css3.png" class="w-100 mx-auto d-block icon-card"></img>
+                    <p class="text-center font-weight-bold">CSS3</p>
+                </div>
+                <div class="col-lg-4 px-1">
+                    <img src="Photos/js.png" class="w-100 mx-auto d-block icon-card"></img>
+                    <p class="text-center font-weight-bold">Javascript-ES6</p>
+                </div>
+            </div>
+
+            <!-- Second Row for large -->
+            <div class="row no-gutters d-none d-lg-flex skills">
+                <div class="col-lg-4 col-md-6 px-1">
+                    <img src="Photos/react.png" class="w-100 mx-auto d-block icon-card"></img>
+                    <p class="text-center font-weight-bold">React</p>
+                </div>
+                <div class="col-lg-4 col-md-6 px-1">
+                    <img src="Photos/python3.png" class="w-100 mx-auto d-block icon-card"></img>
+                    <p class="text-center font-weight-bold">Python</p>
+                </div>
+                <div class="col-lg-4 col-md-6 px-1">
+                    <img src="Photos/git.png" class="w-100 mx-auto d-block icon-card"></img>
+                    <p class="text-center font-weight-bold">Git</p>
+                </div>
+            </div>
+
+            <!-- First Row for medium -->
+            <div class="row no-gutters d-lg-none skillsmedium">
+                <div class="col-md-6 px-1">
+                    <img src="Photos/html5.png" class="w-100 mx-auto d-block icon-card icon"></img>
+                    <p class="text-center font-weight-bold">HTML5</p>
+                </div>
+                <div class="col-md-6 px-1">
+                    <img src="Photos/css3.png" class="w-100 mx-auto d-block icon-card icon"></img>
+                    <p class="text-center font-weight-bold">CSS3</p>
+                </div>
+            </div>
+
+            <!-- Second Row for medium -->
+            <div class="row no-gutters d-lg-none skillsmedium">
+                <div class="col-md-6 px-1">
+                    <img src="Photos/js.png" class="w-100 mx-auto d-block icon-card"></img>
+                    <p class="text-center font-weight-bold">Javascript-ES6</p>
+                </div>
+                <div class="col-md-6 px-1">
+                    <img src="Photos/react.png" class="w-100 mx-auto d-block icon-card"></img>
+                    <p class="text-center font-weight-bold">React</p>
+                </div>
+            </div>
+
+            <!-- Third Row for medium -->
+            <div class="row no-gutters d-lg-none skillsmedium">
+                <div class="col-md-6 px-1">
+                    <img src="Photos/python3.png" class="w-100 mx-auto d-block icon-card"></img>
+                    <p class="text-center font-weight-bold">Python</p>
+                </div>
+                <div class="col-md-6 px-1">
+                    <img src="Photos/git.png" class="w-100 mx-auto d-block icon-card"></img>
+                    <p class="text-center font-weight-bold">Git</p>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Third Section -->
+        <!-- <aside class="bg-light">
             <div class="row no-gutters d-none d-lg-flex">
                 <div class="col-md-6 py-5 pl-5 circle">
                     <img class="w-50 rounded-circle d-block mx-auto" src="./Photos/letstalk.jpg" alt="Let's Talk" />
@@ -102,7 +234,7 @@
                 </div>
             </div>
 
-            <!-- Third Section on medium-->
+            Third Section on medium
             <div class="row no-gutters d-lg-none">
                 <div class="col-md-6 pt-5 pb-3 circle">
                     <img class="w-50 rounded-circle d-block mx-auto" src="../Photos/letstalk.jpg" alt="Let's Talk" />
@@ -116,15 +248,24 @@
                         class="btn btn-block w-25 mx-auto btn-sm mb-5">Let's talk</a>
                 </div>
             </div>
-        </aside>
+        </aside> -->
 
     </main>
 
-    <footer class="bg-dark text-light p-3 text-center">
-        <em>BookSmart Enterprise</em> &#9702;
-        3630 Spring Avenue &#9702;
-        Oceanside, WI 54202 &#9702;
-        920.555.9509
+    <!-- Scroll to top -->
+    <i class="scroll-up" id="scroll-up"
+      ><img
+        src="Photos/upwardarrow.png"
+        class="socicon up-arrow"
+        alt="scroll-up"
+    /></i>
+
+    <footer class="bg-dark text-light p-3 text-center footer">
+        <div>Icons made by <a href="https://www.flaticon.com/authors/riajulislam" title="riajulislam">riajulislam</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+        <div>Icons made by <a href="https://www.flaticon.com/authors/pixel-buddha" title="Pixel Buddha">Pixel Buddha</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+        <div>Icons made by <a href="https://www.flaticon.com/authors/laisa-islam-ani" title="Laisa Islam Ani">Laisa Islam Ani</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+        <div>Icons made by <a href="https://www.flaticon.com/authors/uniconlabs" title="Uniconlabs">Uniconlabs</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+        <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
     </footer>
 
 
@@ -140,7 +281,7 @@
         crossorigin="anonymous"></script>
 
     <!--Optional Javascript-->
-    <script src="form-validation.js"></script>
+    <script src="JS/app.js"></script>
 
 </body>
 
