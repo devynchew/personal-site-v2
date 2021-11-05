@@ -20,32 +20,7 @@ body {
 /* Navigation link styles */
 
 
-/* Button styles */
-#readmorebtn {
-    background-color: #EEE5E9;
-    color: black;
-}
-
-#readmorebtn:hover {
-    background-color: #EEA243;
-    color: white;
-}
-
-#letstalkbtn {
-    background-color: #3D405B;
-    color: white;
-}
-
-#letstalkbtn:hover {
-    background-color: #EEA243;
-    color: white;
-}
-
 /* Background colors */
-
-.customers {
-    color: white;
-}
 
 /* Icon Styles */
 .scroll-up {
@@ -59,16 +34,10 @@ body {
     width: 3rem;
     height: 3rem;
 }
-/* Image styles */
 
-#picture1 {
-    margin-top: 66px;
-}
 
 /* Layout Styles */
-.teacher {
-    padding-left: 10% !important;
-}
+
 .body {
     padding-right: 0px;
     padding-left: 0px;
