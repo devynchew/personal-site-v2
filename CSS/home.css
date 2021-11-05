@@ -113,6 +113,24 @@ body {
     height: 13rem;
 }
 
+.project-card {
+    background-color: #fff;
+    border-radius: 11px;
+    box-shadow: 0 3px 10px var(--primary-shadow);
+    padding: 5px;
+    margin: 10px;
+}
+
+.project-pic {
+    width: 65%;
+    height: 60%;
+  }
+
+.modal-pic {
+    width: 50%;
+    height: 40%;
+}
+
 #aboutmecontainer {
     padding-top: 7rem;
 }
@@ -120,14 +138,6 @@ body {
 .firstrow {
     padding-top: 7rem;
     padding-bottom: 4rem;
-}
-
-.icon-card {
-    background-color: #fff;
-    border-radius: 11px;
-    box-shadow: 0 3px 10px var(--secondary-shadow);
-    padding: 20px;
-    margin: 10px;
 }
 
 /*Footer styles */

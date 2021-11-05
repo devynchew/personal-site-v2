@@ -20,8 +20,6 @@
                 Devyn Chew
             </a>
 
-            
-
             <!-- Collapsible Button -->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
                 <span class="navbar-toggler-icon"></span>
@@ -30,10 +28,17 @@
             <!-- Navbar Links -->
             <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
                 <ul class="navbar-nav nav-fill">
-                    <li class="nav-item"><a target="_blank" class="navbar-brand" href="https://github.com/devynchew"><img src="Photos/github.png" alt="github" style="width:40px;"></a></li>
-                    <li class="nav-item"><a target="_blank" class="navbar-brand" href="https://www.linkedin.com/in/devyn-chew-798653126/"><img src="Photos/linkedin.png" alt="linkedin" style="width:40px;"></a></li>
-                    <li class="nav-item"><a target="_blank" class="navbar-brand" href="https://www.instagram.com/devyn_chew/"><img src="Photos/instagram.png" alt="instagram" style="width:40px;"></a></li>
-                    <li class="nav-item"><a target="_blank" class="navbar-brand" href="mailto:devynchew@gmail.com"><img src="Photos/mail.png" alt="mail" style="width:40px;"></a></li>
+                    <li class="nav-item"><a target="_blank" class="navbar-brand"
+                            href="https://github.com/devynchew"><img src="Photos/github.png" alt="github"
+                                style="width:40px;"></a></li>
+                    <li class="nav-item"><a target="_blank" class="navbar-brand"
+                            href="https://www.linkedin.com/in/devyn-chew-798653126/"><img src="Photos/linkedin.png"
+                                alt="linkedin" style="width:40px;"></a></li>
+                    <li class="nav-item"><a target="_blank" class="navbar-brand"
+                            href="https://www.instagram.com/devyn_chew/"><img src="Photos/instagram.png" alt="instagram"
+                                style="width:40px;"></a></li>
+                    <li class="nav-item"><a target="_blank" class="navbar-brand" href="mailto:devynchew@gmail.com"><img
+                                src="Photos/mail.png" alt="mail" style="width:40px;"></a></li>
                 </ul>
             </div>
         </nav>
@@ -55,7 +60,9 @@
                         <div id="boxshadow" class="w-75 mx-auto">
                             <h2 class="text-center pt-2">About Me</h2>
                             <p class="text-center px-4 pb-4">
-                                Hello, I'm Devyn. I'm a 22 y/o software developer student in Singapore, studying Applied AI and Analytics. I have a keen interest in front-end and back-end software development. Let's get to know each other!
+                                Hello, I'm Devyn. I'm a 22 y/o software developer student in Singapore, studying Applied
+                                AI and Analytics. I have a keen interest in front-end and back-end software development.
+                                Let's get to know each other!
                             </p>
                         </div>
                     </div>
@@ -69,85 +76,142 @@
             <!-- First Row for large -->
             <div class="row no-gutters d-none d-lg-flex projects">
                 <div class="col-lg-4 px-4">
-                    <button type="button" class="btn" data-toggle="modal" data-target="#myModal"><img src="Photos/lms.PNG" class="w-100 mx-auto d-block icon-card icon"></img></button>
+                    <div class="project-card">
+                        <button type="button" class="btn" data-toggle="modal" data-target="#lmsModal">
+                            <img src="Photos/lms.png" class="w-100 mx-auto d-block project-pic"></img>
+                        </button>
+                    </div>
                     <p class="text-center font-weight-bold">BookSmart</p>
                     <p class="text-center">html5/css3/bootstrap4/js-es6</p>
                 </div>
                 <div class="col-lg-4 px-4">
-                    <img src="Photos/bot.png" class="w-100 mx-auto d-block icon-card icon"></img>
+                    <div class="project-card">
+                        <button type="button" class="btn" data-toggle="modal" data-target="#botModal">
+                            <img src="Photos/bot.png" class="w-100 mx-auto d-block project-pic"></img>
+                        </button>
+                    </div>
                     <p class="text-center font-weight-bold">Telegram Customer Support Bot</p>
                     <p class="text-center">python/flask</p>
                 </div>
                 <div class="col-lg-4 px-4">
-                    <img src="Photos/hangman.png" class="w-100 mx-auto d-block icon-card icon"></img>
+                    <div class="project-card">
+                        <button type="button" class="btn" data-toggle="modal" data-target="#hangmanModal">
+                            <img src="Photos/hangman.png" class="w-100 mx-auto d-block project-pic"></img>
+                        </button>
+                    </div>
                     <p class="text-center font-weight-bold">Hangman Game</p>
                     <p class="text-center">js-es6</p>
                 </div>
             </div>
             <!-- The Modal -->
-            <div class="modal" id="myModal">
+            <div class="modal" id="lmsModal">
                 <div class="modal-dialog modal-lg modal-dialog-centered">
-                <div class="modal-content">
-            
-                    <!-- Modal Header -->
-                    <div class="modal-header">
-                    <h4 class="modal-title">Modal Heading</h4>
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <div class="modal-content">
+                        <div class="row no-gutters">
+                            <div class="col-md-6">
+                                <div class="p-5">
+                                    <img src="Photos/lms.png" class="w-100 mx-auto d-block modal-pic"></img>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="px-5 pt-5">
+                                    <h2><a href="https://github.com/devynchew/learning-management-system-website" target="_blank">BookSmart</a></h2>
+                                    <p class="pt-3">A responsive learning management system front-end website I made using html5, css3, bootstrap4 and js-es6.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Modal footer -->
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                        </div>
+
                     </div>
-            
-                    <!-- Modal body -->
-                    <div class="modal-body">
-                    Modal body..
-                    </div>
-            
-                    <!-- Modal footer -->
-                    <div class="modal-footer">
-                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-                    </div>
-            
-                </div>
                 </div>
             </div>
+            <div class="modal" id="botModal">
+                <div class="modal-dialog modal-lg modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="row no-gutters">
+                            <div class="col-md-6">
+                                <div class="p-5">
+                                    <img src="Photos/bot.png" class="w-100 mx-auto d-block modal-pic"></img>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="px-5 pt-5">
+                                    <h2><a href="https://github.com/devynchew/telegram-bot-customer-support" target="_blank">Telegram Customer Support Bot</a></h2>
+                                    <p class="pt-3">A telegram webhook bot that I made using python and flask. It's primary purpose is to act as a line of communication between a customer support group and its customers.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Modal footer -->
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="modal" id="hangmanModal">
+                <div class="modal-dialog modal-lg modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="row no-gutters">
+                            <div class="col-md-6">
+                                <div class="p-5">
+                                    <img src="Photos/hangman.png" class="w-100 mx-auto d-block modal-pic"></img>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="px-5 pt-5">
+                                    <h2><a href="https://github.com/devynchew/telegram-bot-customer-support" target="_blank">Hangman Game</a></h2>
+                                    <p class="pt-3">A hangman game I made using javascript.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Modal footer -->
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
 
             <!-- First Row for medium -->
             <div class="row no-gutters d-lg-none projectsmedium">
                 <div class="col-md-6 px-1">
-                    <img src="Photos/html5.png" class="w-100 mx-auto d-block icon-card icon"></img>
-                    <p class="text-center font-weight-bold">HTML5</p>
+                    <div class="project-card">
+                        <button type="button" class="btn" data-toggle="modal" data-target="#lmsModal">
+                            <img src="Photos/lms.png" class="w-100 mx-auto d-block project-pic"></img>
+                        </button>
+                    </div>
+                    <p class="text-center font-weight-bold">BookSmart</p>
+                    <p class="text-center">html5/css3/bootstrap4/js-es6</p>
                 </div>
                 <div class="col-md-6 px-1">
-                    <img src="Photos/css3.png" class="w-100 mx-auto d-block icon-card icon"></img>
-                    <p class="text-center font-weight-bold">CSS3</p>
+                    <div class="project-card">
+                        <button type="button" class="btn" data-toggle="modal" data-target="#botModal">
+                            <img src="Photos/bot.png" class="w-100 mx-auto d-block project-pic"></img>
+                        </button>
+                    </div>
+                    <p class="text-center font-weight-bold">Telegram Customer Support Bot</p>
+                    <p class="text-center">python/flask</p>
                 </div>
-            </div>
-
-            <!-- Second Row for medium -->
-            <div class="row no-gutters d-lg-none projectsmedium">
-                <div class="col-md-6 px-1">
-                    <img src="Photos/js.png" class="w-100 mx-auto d-block icon-card"></img>
-                    <p class="text-center font-weight-bold">Javascript-ES6</p>
-                </div>
-                <div class="col-md-6 px-1">
-                    <img src="Photos/react.png" class="w-100 mx-auto d-block icon-card"></img>
-                    <p class="text-center font-weight-bold">React</p>
-                </div>
-            </div>
-
-            <!-- Third Row for medium -->
-            <div class="row no-gutters d-lg-none projectsmedium">
-                <div class="col-md-6 px-1">
-                    <img src="Photos/python3.png" class="w-100 mx-auto d-block icon-card"></img>
-                    <p class="text-center font-weight-bold">Python</p>
-                </div>
-                <div class="col-md-6 px-1">
-                    <img src="Photos/git.png" class="w-100 mx-auto d-block icon-card"></img>
-                    <p class="text-center font-weight-bold">Git</p>
+                <div class="col-md-6 px-1 mx-auto">
+                    <div class="project-card">
+                        <button type="button" class="btn" data-toggle="modal" data-target="#hangmanModal">
+                            <img src="Photos/hangman.png" class="w-100 mx-auto d-block project-pic"></img>
+                        </button>
+                    </div>
+                    <p class="text-center font-weight-bold">Hangman Game</p>
+                    <p class="text-center">js-es6</p>
                 </div>
             </div>
         </aside>
 
         <!-- Third Section -->
-        <aside class="pb-5">
+        <aside class="pb-5 pt-5">
             <h2 class="text-center pb-4">My Top Skills</h2>
             <!-- First Row for large -->
             <div class="row no-gutters d-none d-lg-flex skills">
@@ -253,19 +317,20 @@
     </main>
 
     <!-- Scroll to top -->
-    <i class="scroll-up" id="scroll-up"
-      ><img
-        src="Photos/upwardarrow.png"
-        class="socicon up-arrow"
-        alt="scroll-up"
-    /></i>
+    <i class="scroll-up" id="scroll-up"><img src="Photos/upwardarrow.png" class="socicon up-arrow"
+            alt="scroll-up" /></i>
 
     <footer class="bg-dark text-light p-3 text-center footer">
-        <div>Icons made by <a href="https://www.flaticon.com/authors/riajulislam" title="riajulislam">riajulislam</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
-        <div>Icons made by <a href="https://www.flaticon.com/authors/pixel-buddha" title="Pixel Buddha">Pixel Buddha</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
-        <div>Icons made by <a href="https://www.flaticon.com/authors/laisa-islam-ani" title="Laisa Islam Ani">Laisa Islam Ani</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
-        <div>Icons made by <a href="https://www.flaticon.com/authors/uniconlabs" title="Uniconlabs">Uniconlabs</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
-        <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+        <div>Icons made by <a href="https://www.flaticon.com/authors/riajulislam" title="riajulislam">riajulislam</a>
+            from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+        <div>Icons made by <a href="https://www.flaticon.com/authors/pixel-buddha" title="Pixel Buddha">Pixel Buddha</a>
+            from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+        <div>Icons made by <a href="https://www.flaticon.com/authors/laisa-islam-ani" title="Laisa Islam Ani">Laisa
+                Islam Ani</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+        <div>Icons made by <a href="https://www.flaticon.com/authors/uniconlabs" title="Uniconlabs">Uniconlabs</a> from
+            <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+        <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a
+                href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
     </footer>
 
 
