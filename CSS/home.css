@@ -89,16 +89,18 @@ body {
     background-color: #fff;
     border-radius: 11px;
     box-shadow: 0 3px 10px var(--primary-shadow);
-    padding: 5px;
-    min-width: 18rem;
-    max-width: 200px;
-    height: 15rem;
+    padding-top: 15px;
+    min-width: 13rem;
+    width: 18rem;
+    min-height: 100px;
+    
 }
 
 .skills-card {
     background-color: #fff;
     border-radius: 11px;
     box-shadow: 0 3px 10px var(--primary-shadow);
+    padding: 5px;
     padding-top: 0rem;
     height: 10rem;
     min-width: 10rem;
@@ -107,7 +109,6 @@ body {
 
 
 .project-pic {
-    width: 200px;
     height: 130px;
     max-width: 200px;
   }
