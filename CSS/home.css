@@ -113,8 +113,8 @@ body {
     box-shadow: 0 3px 10px var(--primary-shadow);
     padding: 5px;
     padding-top: 0rem;
-    height: 13rem;
-    min-width: 12rem;
+    height: 11rem;
+    min-width: 10rem;
     max-width: 200px;
 }
 
@@ -130,8 +130,8 @@ body {
 }
 
 .skills-pic {
-    width: 200px;
-    height: 170px;
+    width: 170px;
+    height: 140px;
     max-width: 200px;
 }
 
