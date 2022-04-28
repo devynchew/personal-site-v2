@@ -1,16 +1,16 @@
 @charset "utf-8";
 
-/*import Fira Mono font*/
-@font-face {
-    font-family: FiraMono;
-    src: url(../font/FiraMono-Regular.ttf);
-}
+/*import fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
 
 /* Variables */
 :root {
-    --font-family: "FiraMono", sans-serif;
-    --primary-shadow: #8b8eaf;
-    --secondary-shadow: #a17a69;
+    --font-family: 'Titillium Web', sans-serif;
+    --dark-blue: #22223b;
+    --light-blue: #4a4e69;
+    --purple: #9a8c98;
+    --apricot: #c9ada7;
+    --light-white: #f2e9e4;
 }
 
 /* Global */
@@ -79,7 +79,7 @@
     content: "";
     clear: both;
     display: table;
-  }
+}
 
 body {
     font-family: var(--font-family);
@@ -87,10 +87,42 @@ body {
 
 
 /* Navigation bar styles */
+.navbar {
+    text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0.65gitrem 0;
+    background-color: var(--light-blue);
+}
+
+li {
+    display: inline;
+    background-color: var(--secondary-shadow);
+    
+}
+
+li a {
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    color: var(--light-white);
+    font-size: 1.15rem;
+    padding: 0 1rem;
+}
 
 
-/* Navigation link styles */
 
+
+/* Main style */
+main {
+    margin-top: 20vh;
+}
 
 /* Background colors */
 
