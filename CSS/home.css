@@ -134,7 +134,18 @@ h1 {
     font-size: 6.25rem;
     margin: 0;
     padding: 0;
-    padding-top: 10rem;
+}
+
+h1.header {
+    padding-top: 9rem;
+}
+
+h1.subheader {
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+    padding-top: 3rem;
 }
 
 h2 {
@@ -146,6 +157,14 @@ h2 {
     line-height: 1.5;
     text-transform: uppercase;
     padding-top: 0.5rem;
+}
+
+/* Paragraph styles */
+p.intro {
+    width: 28rem;
+    margin: 0 auto;
+    text-align: justify;
+    padding-top: 2rem;
 }
 
 /* Background colors */
