@@ -9,7 +9,8 @@ import {
     siteTitle
 } from './layout.module.css'
 
-const Layout = ({ pageTitle, children }) => {
+// pageTitle is a normal prop, children is a children prop
+const Layout = ({ pageTitle, children }) => { 
     const data = useStaticQuery(graphql`
     query {
         site {
