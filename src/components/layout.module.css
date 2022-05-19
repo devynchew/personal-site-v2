@@ -7,25 +7,12 @@
     max-width: 960px;
     margin: 0 auto;
     font-family: sans-serif;
+    clear: right;
 }
 
 .heading {
     color: rebeccapurple;
     width: 100%;
-}
-
-.nav-links {
-    display: flex;
-    list-style: none;
-    padding-left: 0;
-}
-
-.nav-link-item {
-    padding-right: 2rem;
-}
-
-.nav-link-text {
-    color: black;
 }
 
 .site-title {

@@ -1,14 +1,12 @@
 import * as React from 'react'
-import { Link, useStaticQuery, graphql } from 'gatsby'
+import { useStaticQuery, graphql } from 'gatsby'
 import {
     container,
-    navContainer,
     heading,
-    navLinks,
-    navLinkItem,
-    navLinkText,
     siteTitle
 } from './layout.module.css'
+
+import * as nav from './nav.module.css'
 
 // pageTitle is a normal prop, children is a children prop
 const Layout = ({ pageTitle, children }) => {
@@ -22,37 +20,13 @@ const Layout = ({ pageTitle, children }) => {
     }`)
 
     return (
-        <div>
-            <div className={navContainer}>
-                <nav>
-                    <ul className={navLinks}>
-                        <li className={navLinkItem}>
-                            <Link to="/" className={navLinkText}>
-                                Home
-                            </Link>
-                        </li>
-                        <li className={navLinkItem}>
-                            <Link to="/about" className={navLinkText}>
-                                About
-                            </Link>
-                        </li>
-                        <li className={navLinkItem}>
-                            <Link to="/blog" className={navLinkText}>
-                                Blog
-                            </Link>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-            <div className={container}>
-                <title>{pageTitle} | {data.site.siteMetadata.title}</title>
-                <header className={siteTitle}>{data.site.siteMetadata.title}</header>
+        <div className={container}>
+            <title>{pageTitle} | {data.site.siteMetadata.title}</title>
 
-                <main>
-                    <h1 className={heading}>{pageTitle}</h1>
-                    {children}
-                </main>
-            </div>
+            <main>
+                <h1 className={heading}>{pageTitle}</h1>
+                {children}
+            </main>
         </div>
     )
 }

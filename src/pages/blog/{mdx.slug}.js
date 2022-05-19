@@ -1,6 +1,7 @@
 import * as React from 'react'
 import { graphql } from 'gatsby'
 import Layout from '../../components/layout'
+import Navbar from '../../components/nav'
 import { MDXRenderer } from 'gatsby-plugin-mdx'
 import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 
@@ -8,16 +9,20 @@ const BlogPost = ({ data }) => {
   const image = getImage(data.mdx.frontmatter.hero_image)
 
   return (
-    <Layout pageTitle={data.mdx.frontmatter.title}>
-      <p>Posted:{data.mdx.frontmatter.date}</p>
-      <GatsbyImage
-        image={image}
-        alt={data.mdx.frontmatter.hero_image_alt}
-      />
-      <MDXRenderer>
-        {data.mdx.body}
-      </MDXRenderer>
-    </Layout>
+    <>
+      <Navbar>
+      </Navbar>
+      <Layout pageTitle={data.mdx.frontmatter.title}>
+        <p>Posted:{data.mdx.frontmatter.date}</p>
+        <GatsbyImage
+          image={image}
+          alt={data.mdx.frontmatter.hero_image_alt}
+        />
+        <MDXRenderer>
+          {data.mdx.body}
+        </MDXRenderer>
+      </Layout>
+    </>
   )
 }
 
