@@ -27,22 +27,34 @@
     align-items: center;
 }
 
+.nav-links {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
 .button {
     text-decoration: none;
     cursor: pointer;
 }
 
-
-.nav-links {
-    display: flex;
-    list-style: none;
-    padding-left: 0;
+.resume-button {
+    composes: button;
+    background: transparent;
+    border: 1px solid;
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    margin-left: 15px;
 }
 
+
 .nav-link-item {
-    padding-right: 2rem;
+    margin: 0 5px;
 }
 
 .nav-link-text {
-    color: black;
+    padding: 10px;
+    text-decoration: none;
 }

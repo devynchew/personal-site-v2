@@ -1,10 +1,12 @@
+@import "./global.css";
+
 /* Global */
 * {
     box-sizing: border-box;
 }
 
-.body {
-    font-family: "Fira Mono";
+body {
+    font-family: var(--font-primary);
 }
 
 .container {

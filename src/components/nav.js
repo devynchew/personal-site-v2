@@ -30,7 +30,7 @@ const Nav = () => {
                         </li>
                     </ol>
                     <div>
-                        <Link to="/" className={nav.navLinkText}>
+                        <Link to="/" className={nav.resumeButton}>
                             Resume
                         </Link>
                     </div>
