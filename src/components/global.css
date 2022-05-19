@@ -1,3 +1,5 @@
 :root {
-    --font-primary: 'Anonymouse Pro', sans-serif;
+    --font-anonymouse-pro: 'Anonymouse Pro', sans-serif;
+    --font-size-lower: 14px;
+    --font-size-upper: 16px;
 }

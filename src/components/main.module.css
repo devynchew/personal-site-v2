@@ -4,3 +4,8 @@
     margin: 0 auto;
     padding: 100px 150px 0;
 }
+
+.small-heading {
+    margin: 0px 0px 30px 4px;
+    font-size: clamp(var(--font-size-lower), 5vw, var(--font-size-upper))
+}
