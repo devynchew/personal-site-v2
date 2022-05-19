@@ -1,7 +1,37 @@
+
+
 /* Navigation Styles */
-.nav-right {
-    float: right;
+* {
+    box-sizing: border-box;
 }
+
+.header {
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+
+}
+
+.nav {
+    composes: header;
+    position: relative;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+}
+
+.button {
+    text-decoration: none;
+    cursor: pointer;
+}
+
 
 .nav-links {
     display: flex;

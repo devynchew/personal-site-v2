@@ -1,41 +1,43 @@
 import * as React from 'react'
-import { Link, useStaticQuery, graphql } from 'gatsby'
+import { Link } from 'gatsby'
 
 import * as nav from './nav.module.css'
 
 // pageTitle is a normal prop, children is a children prop
-const Navbar = () => {
-    const data = useStaticQuery(graphql`
-    query {
-        site {
-            siteMetadata {
-                title
-            }
-        }
-    }`)
+const Nav = () => {
 
     return (
-        <div>
-            <nav className={nav.navRight}>
-                <ul className={nav.navLinks}>
-                    <li className={nav.navLinkItem}>
+        <header className={nav.header}>
+            <nav className={nav.nav}>
+                <div>Logo
+                </div>
+                <div className={nav.navRight}>
+                    <ol className={nav.navLinks}>
+                        <li className={nav.navLinkItem}>
+                            <Link to="/" className={nav.navLinkText}>
+                                About
+                            </Link>
+                        </li>
+                        <li className={nav.navLinkItem}>
+                            <Link to="/about" className={nav.navLinkText}>
+                                Projects
+                            </Link>
+                        </li>
+                        <li className={nav.navLinkItem}>
+                            <Link to="/blog" className={nav.navLinkText}>
+                                Contact
+                            </Link>
+                        </li>
+                    </ol>
+                    <div>
                         <Link to="/" className={nav.navLinkText}>
-                            About
+                            Resume
                         </Link>
-                    </li>
-                    <li className={nav.navLinkItem}>
-                        <Link to="/about" className={nav.navLinkText}>
-                            Projects
-                        </Link>
-                    </li>
-                    <li className={nav.navLinkItem}>
-                        <Link to="/blog" className={nav.navLinkText}>
-                            Contact
-                        </Link>
-                    </li>
-                </ul>
+                    </div>
+                </div>
+
             </nav>
-        </div>
+        </header>
     )
 }
-export default Navbar
+export default Nav

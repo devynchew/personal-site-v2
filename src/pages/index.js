@@ -1,24 +1,22 @@
 // Step 1: Import React
 import * as React from 'react'
 import Layout from '../components/layout'
-import Navbar from '../components/nav'
-import { StaticImage } from 'gatsby-plugin-image'
+import Nav from '../components/nav'
+import Main from '../components/main'
+// import { Link, useStaticQuery, graphql } from 'gatsby'
+// import { StaticImage } from 'gatsby-plugin-image'
 
 // Step 2: Define your component
 const IndexPage = () => {
 
   return (
     <>
-      <Navbar>
-      </Navbar>
-      <Layout pageTitle="Home Page">
-
-        <p>I'm making this by following the Gatsby Tutorial. Hello</p>
-        <StaticImage
-          alt="Lighthouse"
-          src="../images/lighthouse498x250.png"
-        />
+      <Nav>
+      </Nav>
+      <Layout>
       </Layout>
+      <Main>
+      </Main>
     </>
   )
 }
