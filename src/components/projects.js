@@ -28,7 +28,7 @@ const Projects = () => {
                 {
                     data.allMdx.edges.map((edge) => (
                         <li key={edge.id}>
-                            <div>
+                            <div className={projects.cards}>
                                 <header>
                                     <h3>{edge.node.frontmatter.title}</h3>
                                     <div>
