@@ -41,6 +41,10 @@
     color: var(--color-light-yellow);
 }
 
+.resume-button:hover {
+    background: var(--color-grey-hover);
+}
+
 
 .nav-link-item {
     margin: 0 5px;
@@ -50,4 +54,8 @@
     padding: 10px;
     text-decoration: none;
     color: var(--color-grey);
+}
+
+.nav-link-text:hover {
+    color: var(--color-light-yellow);
 }
