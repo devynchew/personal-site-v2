@@ -1,0 +1,27 @@
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding-top: 100px;
+}
+
+.heading {
+    display: block;
+}
+
+.column {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: 50px;
+}
+
+.left-column {
+    line-height: 1.5;
+    color: var(--color-grey);
+}
+
+.skills {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0;
+    list-style: none;
+}

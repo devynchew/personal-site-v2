@@ -3,6 +3,7 @@ import * as React from 'react'
 import Layout from '../components/layout'
 import Nav from '../components/nav'
 import Main from '../components/main'
+import About from '../components/about'
 // import { Link, useStaticQuery, graphql } from 'gatsby'
 // import { StaticImage } from 'gatsby-plugin-image'
 
@@ -17,6 +18,8 @@ const IndexPage = () => {
       </Layout>
       <Main>
       </Main>
+      <About>
+      </About>
     </>
   )
 }

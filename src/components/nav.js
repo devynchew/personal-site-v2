@@ -1,7 +1,7 @@
 import * as React from 'react'
 import { Link } from 'gatsby'
 
-import * as nav from './nav.module.css'
+import * as nav from './css/nav.module.css'
 
 // pageTitle is a normal prop, children is a children prop
 const Nav = () => {
