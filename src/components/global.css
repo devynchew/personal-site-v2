@@ -1,5 +1,23 @@
 :root {
     --font-anonymouse-pro: 'Anonymouse Pro', sans-serif;
+    --font-calibre: 'Calibre', sans-serif;
+    --font-montserrat: 'Montserrat', sans-serif;
+    --font-fira-code: 'Fira Code', sans-serif;
+    --font-fira-mono: 'Fira Mono', sans-serif;
+    --font-sora: 'Sora', sans-serif;
+    --font-size-small: 13px;
     --font-size-lower: 14px;
     --font-size-upper: 16px;
+    --color-black: #1c1d25;
+    --color-white: #FFF;
+    --color-grey: #b0b2c3;
+    --color-blue: #457b9d;
+    --color-yellow: #ffca3a;
+    --color-light-yellow: #ffd166;
+
+}
+
+.button {
+    text-decoration: none;
+    cursor: pointer;
 }

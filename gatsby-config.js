@@ -20,7 +20,10 @@ module.exports = {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [
-          `Anonymouse Pro`,
+          `Anonymouse Pro\:400`,
+          `Fira Code\:400`,
+          `Fira Mono\:400`,
+          `sora\:400`,
           `muli\:400,400i,700,700i`,
         ],
         display: "swap",

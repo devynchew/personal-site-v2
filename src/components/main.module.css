@@ -1,11 +1,46 @@
 /* Homepage styles */
 .container {
     max-width: 1300px;
-    margin: 0 auto;
+    margin: 55px auto 0;
     padding: 100px 150px 0;
 }
 
 .small-heading {
     margin: 0px 0px 30px 4px;
-    font-size: clamp(var(--font-size-lower), 5vw, var(--font-size-upper))
+    font-size: clamp(var(--font-size-lower), 5vw, var(--font-size-upper));
+    font-weight: 400;
+    color: var(--color-light-yellow);
+    font-family: var(--font-sora);
+}
+
+.big-heading {
+    margin: 0px;
+    font-size: clamp(40px, 8vw, 70px);
+    font-family: "Calibre","Inter","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif;
+    font-weight: 500;
+}
+
+.big-secondary-heading {
+    composes: big-heading;
+    color: var(--color-grey);
+}
+
+.container p {
+    max-width: 540px;
+    line-height: 1.6;
+    font-family: var(--font-sora);
+    font-weight: 400;
+    margin-top: 25px;
+    color: var(--color-grey);
+}
+
+.find-out-button {
+    composes: button from "./global.css";
+    background: transparent;
+    border: 1.5px solid;
+    border-radius: 4px;
+    padding: 0.7rem 1.65rem;
+    display: inline-block;
+    margin-top: 30px;
+    color: var(--color-light-yellow);
 }
