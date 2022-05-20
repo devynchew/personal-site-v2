@@ -6,7 +6,7 @@
 }
 
 .small-heading {
-    margin: 0px 0px 30px 4px;
+    margin: 0px 0px 25px 4px;
     font-size: clamp(var(--font-size-lower), 5vw, var(--font-size-upper));
     font-weight: 400;
     color: var(--color-light-yellow);
@@ -14,17 +14,17 @@
 }
 
 .big-heading {
-    margin: 0px;
+    margin: 0 0 10px 0;
     font-size: clamp(40px, 8vw, 70px);
-    font-family: "Calibre","Inter","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif;
+    font-family: var(--font-big-heading);
     font-weight: 500;
 }
 
 .big-secondary-heading {
     composes: big-heading;
     color: var(--color-grey);
+    font-size: clamp(40px, 8vw, 65px);
 }
-
 .container p {
     max-width: 540px;
     line-height: 1.6;
