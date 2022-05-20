@@ -28,6 +28,13 @@ module.exports = {
         ],
         display: "swap",
       }
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `projects`,
+        path: `${__dirname}/projects`,
+      }
     }
   ]
 }
