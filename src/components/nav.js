@@ -14,17 +14,17 @@ const Nav = () => {
                 <div className={nav.navRight}>
                     <ol className={nav.navLinks}>
                         <li className={nav.navLinkItem}>
-                            <Link to="/" className={nav.navLinkText}>
+                            <Link to="/#about" className={nav.navLinkText}>
                                 About
                             </Link>
                         </li>
                         <li className={nav.navLinkItem}>
-                            <Link to="/about" className={nav.navLinkText}>
+                            <Link to="/#projects" className={nav.navLinkText}>
                                 Projects
                             </Link>
                         </li>
                         <li className={nav.navLinkItem}>
-                            <Link to="/blog" className={nav.navLinkText}>
+                            <Link to="/#contact" className={nav.navLinkText}>
                                 Contact
                             </Link>
                         </li>

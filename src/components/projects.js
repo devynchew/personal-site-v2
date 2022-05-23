@@ -6,14 +6,19 @@ const Projects = () => {
 
     const data = useStaticQuery(graphql`
     query {
-        allMdx(filter: {fileAbsolutePath: {regex: "/projects/"}}) {
+        allMdx(
+          filter: {fileAbsolutePath: {regex: "/projects/"}}
+          sort: {fields: frontmatter___date, order: DESC}
+        ) {
           edges {
             node {
               frontmatter {
                 title
                 summary
+                date(formatString: "MMMM, D, YYYY")
               }
               id
+              slug
             }
           }
         }

@@ -10,7 +10,7 @@ const Main = () => {
             <h2 className={main.bigHeading}>Devyn Chew.</h2>
             <h3 className={main.bigSecondaryHeading}>I build things for the web.</h3>
             <p>I'm an aspiring web developer from Singapore. Currently, I'm focused on learning how to build accessible and human-centered ecommerce websites at Efusion Technology.</p>
-            <Link className={main.findOutButton} to="/">
+            <Link className={main.findOutButton} to="#about">
                 Find out more!
             </Link>
         </section>

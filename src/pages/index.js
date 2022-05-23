@@ -5,6 +5,8 @@ import Nav from '../components/nav'
 import Main from '../components/main'
 import About from '../components/about'
 import Projects from '../components/projects'
+import Contact from '../components/contact'
+import Logo from '../components/logo'
 // import { Link, useStaticQuery, graphql } from 'gatsby'
 // import { StaticImage } from 'gatsby-plugin-image'
 
@@ -18,6 +20,8 @@ const IndexPage = () => {
       <Main></Main>
       <About></About>
       <Projects></Projects>
+      <Contact></Contact>
+      <Logo></Logo>
     </>
   )
 }
