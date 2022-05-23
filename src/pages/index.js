@@ -6,7 +6,7 @@ import Main from '../components/main'
 import About from '../components/about'
 import Projects from '../components/projects'
 import Contact from '../components/contact'
-import Logo from '../components/logo'
+import Side from '../components/side'
 // import { Link, useStaticQuery, graphql } from 'gatsby'
 // import { StaticImage } from 'gatsby-plugin-image'
 
@@ -21,7 +21,7 @@ const IndexPage = () => {
       <About></About>
       <Projects></Projects>
       <Contact></Contact>
-      <Logo></Logo>
+      <Side></Side>
     </>
   )
 }
