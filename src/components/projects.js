@@ -32,7 +32,7 @@ const Projects = () => {
                                 <header>
                                     <h3>{edge.node.frontmatter.title}</h3>
                                     <div>
-                                        <p>{edge.node.frontmatter.summary}</p>
+                                        <p className={projects.description}>{edge.node.frontmatter.summary}</p>
                                     </div>
                                 </header>
                             </div>

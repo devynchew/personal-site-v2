@@ -22,3 +22,7 @@
     padding: 2rem 1.75rem;
     border-radius: 4px;
 }
+
+.description {
+    font-size: var(--font-size-15);
+}

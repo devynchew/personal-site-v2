@@ -6,9 +6,10 @@
     --font-fira-mono: 'Fira Mono', sans-serif;
     --font-sora: 'Sora', sans-serif;
     --font-big-heading: 'Calibre','Inter','San Francisco','SF Pro Text',-apple-system,system-ui,sans-serif;
-    --font-size-small: 13px;
-    --font-size-lower: 14px;
-    --font-size-upper: 16px;
+    --font-size-13: 13px;
+    --font-size-14: 14px;
+    --font-size-15: 15px;
+    --font-size-16: 16px;
     --color-black: #1c1d25;
     --color-white: #FFF;
     --color-grey: #b0b2c3;
