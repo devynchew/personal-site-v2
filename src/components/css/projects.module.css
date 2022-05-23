@@ -10,19 +10,32 @@
 .grid {
     list-style: none;
     padding: 0px;
-    margin-top: 50px;
+    margin: 50px 0px 0px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 15px;
     position: relative;
 }
 
-.cards {
+.outer-card {
+    position: relative;
+}
+
+.card {
+    display: flex;
+    justify-content: space-between;
     height: 100%;
-    background-color: #1d2d44;
+    background-color: var(--color-dark-grey);
     padding: 2rem 1.75rem;
     border-radius: 4px;
+    position: relative;
+    align-items: flex-start;
 }
+
+.image {
+    height: 150px;
+}
+
 
 .description {
     font-size: var(--font-size-14);

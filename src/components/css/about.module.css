@@ -49,6 +49,7 @@
 }
 
 .right-column {
+    position: relative;
     max-width: 300px;
 }
 
