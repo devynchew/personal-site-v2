@@ -40,7 +40,7 @@ const Projects = () => {
 
   return (
     <section id='projects' className={projects.container}>
-      <h2>Noteworthy Projects</h2>
+      <h2>Projects Showcase</h2>
       <ul className={projects.grid}>
         {
           data.allMdx.edges.map((edge) => (
