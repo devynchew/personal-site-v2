@@ -108,5 +108,9 @@
 @media screen and (max-width: 768px) {
     .grid {
         grid-template-columns: 1fr;
+        max-width: 500px;
+    }
+    .description {
+        padding-bottom: 20px;
     }
 }

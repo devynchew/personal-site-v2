@@ -36,3 +36,20 @@
     color: var(--color-light-yellow);
 }
 
+@media screen and (max-width: 1200px) {
+    .container {
+        width: 200px;
+        position: static;
+        margin: 0 auto;
+    }
+    .inner {
+        flex-direction: row;
+        padding: 0px;
+        margin: 0px;
+        justify-content: space-between;
+    }
+    .inner::after {
+        display: none;
+    }
+}
+
