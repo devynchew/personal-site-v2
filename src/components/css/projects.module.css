@@ -21,6 +21,10 @@
     position: relative;
 }
 
+.outer-card p {
+    margin: 0px;
+}
+
 .outer-card > a, .outer-card > a:active {
     text-decoration: none;
     color: inherit;
