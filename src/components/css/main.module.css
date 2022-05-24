@@ -16,7 +16,7 @@
 
 .big-heading {
     margin: 0 0 10px 0;
-    font-size: clamp(40px, 8vw, 70px);
+    font-size: clamp(35px, 8vw, 70px);
     font-family: var(--font-big-heading);
     font-weight: 500;
     letter-spacing: 1px;
@@ -25,8 +25,9 @@
 .big-secondary-heading {
     composes: big-heading;
     color: var(--color-grey);
-    font-size: clamp(40px, 8vw, 65px);
+    font-size: clamp(35px, 8vw, 65px);
 }
+
 .container p {
     max-width: 540px;
     line-height: 1.6;
@@ -49,4 +50,10 @@
 
 .find-out-button:hover {
     background: var(--color-grey-hover);
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 100px 50px 0;
+    }
 }

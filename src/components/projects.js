@@ -50,7 +50,7 @@ const Projects = () => {
                   <header>
                     <div className={projects.image}>
                       <GatsbyImage
-                        imageStyle={{ objectFit: `contain` }}
+                        imageStyle={{ objectFit: `cover` }}
                         image={edge.node.frontmatter.hero_image.childImageSharp.gatsbyImageData}
                         alt={edge.node.frontmatter.hero_image_alt}
                       />

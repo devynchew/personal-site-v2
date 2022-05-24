@@ -23,7 +23,7 @@ const About = () => {
                     </ul>
                 </div>
                 <div className={about.rightColumn}>
-                    <div classname={about.photoWrapper}>
+                    <div className={about.photoWrapper}>
                         <StaticImage src="../images/devyn.png" alt="Devyn's photo" />
                     </div>
                 </div>

@@ -55,4 +55,21 @@
 
 .photo-wrapper {
     border-radius: 4px;
+    margin: 0 auto;
+    width: 99%;
+}
+
+@media screen and (max-width: 992px) {
+    .container {
+        padding: 100px 40px 0px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .column {
+        grid-template-columns: 1fr;
+    }
+    .right-column {
+        margin: 0 auto;
+    }
 }
