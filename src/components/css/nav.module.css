@@ -8,11 +8,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 50px;
+    padding: 0 25px;
     color: var(--color-grey);
     background-color: var(--color-black);
     opacity: 0.85;
     backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     z-index: 10;
 }
 
@@ -62,4 +63,98 @@
 
 .nav-link-text:hover {
     color: var(--color-light-yellow);
+}
+
+.hamburger {
+    font-size: 30px;
+    border: 0px;
+    background-color: transparent;
+    color: var(--color-white);
+    cursor: pointer;
+    padding: 0px;
+    position: absolute;
+    top: 50%;
+    right: 25px;
+    transform: translateY(-50%);
+    display: none;
+}
+
+.nav-right-expanded {
+    composes: nav-right;
+    display: none;
+    opacity: 1;
+    background-color: var(--color-black);
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+}
+
+@media screen and (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+
+    .header {
+        padding: 0px;
+    }
+
+    .nav-right {
+        position: absolute;
+        top: 60px;
+        left: 0px;
+        flex-direction: column;
+        width: 100%;
+        height: calc(100vh - 750px);
+        display: none;
+    }
+
+    .nav-right-expanded {
+        display: flex;
+    }
+
+    .nav-links {
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .nav-link-item {
+        width: 100%;
+        margin: 0px auto;
+        padding: 0px;
+        text-align: center;
+    }
+
+    .nav-link-text {
+        display: block;
+        width: 99%;
+        margin: 0px auto;
+        padding: 0.75rem 0px;
+    }
+
+    .resume-button-wrapper {
+        width: 100%;
+        margin: 10px 0px;
+        padding: 0px;
+    }
+
+    .resume-button {
+        composes: button from "./global.css";
+        display: block;
+        background: transparent;
+        border: none;
+        border-radius: 0px;
+        width: 99%;
+        padding: 0px;
+        margin: 0px auto;
+        text-align: center;
+        color: var(--color-grey);
+    }
+
+    .resume-button:hover {
+        background: transparent;
+        color: var(--color-light-yellow);
+    }
+
 }
