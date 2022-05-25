@@ -6,14 +6,32 @@ import { GiHamburgerMenu } from "@react-icons/all-files/gi/GiHamburgerMenu";
 
 // pageTitle is a normal prop, children is a children prop
 const Nav = () => {
+    // Detect whether the hamburger menu is clicked on
     const [isNavExpanded, setIsNavExpanded] = React.useState(false)
+    // Detect the screen width
+    const [screenWidth, setScreenWidth] = React.useState(window.innerWidth)
+
+    // Change the state variable 'screenWidth' to the current window size whenever the window is resized
+    React.useEffect(() => {
+
+        const changeWidth = () => {
+            setScreenWidth(window.innerWidth);
+        }
+
+        window.addEventListener('resize', changeWidth)
+
+        return () => {
+            window.removeEventListener('resize', changeWidth)
+        }
+
+    }, [])
 
     return (
         <header className={nav.header}>
             <nav className={nav.nav}>
                 <div>Logo
                 </div>
-                <div className={isNavExpanded ? nav.navRightExpanded : nav.navRight}>
+                <div className={isNavExpanded && screenWidth < 768 ? nav.navRightExpanded : nav.navRight}>
                     <ol className={nav.navLinks}>
                         <li className={nav.navLinkItem}>
                             <Link to="/#about" className={nav.navLinkText}>
