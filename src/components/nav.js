@@ -6,21 +6,21 @@ import { GiHamburgerMenu } from "@react-icons/all-files/gi/GiHamburgerMenu";
 
 // Navbar component of the webpage, at the top.
 const Nav = () => {
+    // Fix the 'Gatsby window not available during server side rendering build' error
+    const isBrowser = typeof window !== "undefined"
 
     // Detect whether the hamburger menu is clicked on
     const [isNavExpanded, setIsNavExpanded] = React.useState(false)
     // Detect the screen width
-    const [screenWidth, setScreenWidth] = React.useState(window.innerWidth)
-
+    if (isBrowser) {
+        var [screenWidth, setScreenWidth] = React.useState(window.innerWidth)
+    }
+    
     // Change the state variable 'screenWidth' to the current window size whenever the window is resized
     React.useEffect(() => {
-        // Fix the 'Gatsby window not available during server side rendering build' error
-        const isBrowser = typeof window !== "undefined"
 
         const changeWidth = () => {
-            if (isBrowser) {
-                setScreenWidth(window.innerWidth);
-            }
+            setScreenWidth(window.innerWidth);
         }
 
         window.addEventListener('resize', changeWidth)
