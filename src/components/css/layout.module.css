@@ -1,0 +1,36 @@
+@import "./global.css";
+
+/* Global */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-sora);
+    background-color: var(--color-black);
+    color: var(--color-white);
+    word-spacing: 1px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    line-height: 1.1;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    font-family: sans-serif;
+    clear: right;
+}
+
+.site-title {
+    font-size: 3rem;
+    color: gray;
+    font-weight: 700;
+    margin: 3rem 0;
+    text-align: center;
+}

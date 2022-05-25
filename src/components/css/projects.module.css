@@ -1,0 +1,118 @@
+.container {
+    margin: 0 auto;
+    padding: 150px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1000px;
+}
+
+.grid {
+    list-style: none;
+    padding: 0px;
+    margin: 50px 0px 0px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 15px;
+    position: relative;
+}
+
+.outer-card {
+    position: relative;
+}
+
+.outer-card p {
+    margin: 0px;
+}
+
+.outer-card>a, .outer-card>a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+.outer-card>a:hover {
+    text-decoration: none;
+    opacity: 0.9;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    background-color: var(--color-dark-grey);
+    padding: 2rem 1.75rem 1rem;
+    border-radius: 4px;
+    position: relative;
+    align-items: flex-start;
+}
+
+.footer {
+    width: 100%;
+}
+
+.logo {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.github {
+    font-size: clamp(1.2rem, 2.5vw, 1.5rem);
+    font-weight: 400;
+    font-family: var(--font-calibre);
+}
+
+.github>a, .github>a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+.github>a:hover {
+    text-decoration: none;
+    color: var(--color-light-yellow);
+}
+
+.image {
+    height: 150px;
+}
+
+
+.description {
+    font-size: var(--font-size-14);
+}
+
+/* Project cards get displayed as a 2 col grid below 1285px screen-width */
+@media screen and (max-width: 1285px) {
+    .grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+
+    .image {
+        height: 230px;
+        max-height: none;
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    .grid {
+        padding: 0px 30px 0px;
+    }
+
+    .image {
+        height: auto;
+        max-height: none;
+    }
+}
+
+/* Project cards get displayed as a 1 col grid layout below 768px screen-width */
+@media screen and (max-width: 768px) {
+    .grid {
+        grid-template-columns: 1fr;
+        max-width: 500px;
+    }
+    .description {
+        padding-bottom: 20px;
+    }
+}

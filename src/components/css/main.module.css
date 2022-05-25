@@ -1,0 +1,59 @@
+/* Homepage styles */
+.container {
+    max-width: 1300px;
+    margin: 140px auto 0;
+    padding: 100px 150px 0;
+}
+
+.small-heading {
+    margin: 0px 0px 25px 4px;
+    font-size: clamp(var(--font-size-14), 5vw, var(--font-size-16));
+    font-weight: 400;
+    color: var(--color-light-yellow);
+    font-family: var(--font-sora);
+    word-spacing: 3px;
+}
+
+.big-heading {
+    margin: 0 0 10px 0;
+    font-size: clamp(35px, 8vw, 70px);
+    font-family: var(--font-big-heading);
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.big-secondary-heading {
+    composes: big-heading;
+    color: var(--color-grey);
+    font-size: clamp(35px, 8vw, 65px);
+}
+
+.container p {
+    max-width: 540px;
+    line-height: 1.6;
+    font-family: var(--font-sora);
+    font-weight: 400;
+    margin-top: 25px;
+    color: var(--color-grey);
+}
+
+.find-out-button {
+    composes: button from "./global.css";
+    background: transparent;
+    border: 1.5px solid;
+    border-radius: 4px;
+    padding: 0.7rem 1.65rem;
+    display: inline-block;
+    margin-top: 30px;
+    color: var(--color-light-yellow);
+}
+
+.find-out-button:hover {
+    background: var(--color-grey-hover);
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 100px 50px 0;
+    }
+}

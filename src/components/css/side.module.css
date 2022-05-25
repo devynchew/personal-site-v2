@@ -1,0 +1,56 @@
+.container {
+    width: 60px;
+    position: fixed;
+    bottom: 0px;
+    right: 40px;
+}
+
+.inner {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    align-items: center;
+    padding: 0px;
+    margin: 0px;
+    justify-content: space-between;
+}
+
+.inner::after {
+    content: "";
+    width: 1px;
+    background-color: var(--color-grey);
+    height: 110px;
+}
+
+.inner li {
+    font-size: clamp(1.5rem, 2.5vw, 1.8rem);
+    color: var(--color-grey);
+    padding: 8px;
+}
+
+.inner > li > a {
+    color: var(--color-grey);
+}
+
+.inner > li > a:hover {
+    color: var(--color-light-yellow);
+}
+
+/* Social media icons get displayed at the bottom of the page below 1200px screen-width */
+@media screen and (max-width: 1200px) {
+    .container {
+        width: 200px;
+        position: static;
+        margin: 0 auto;
+    }
+    .inner {
+        flex-direction: row;
+        padding: 0px;
+        margin: 0px;
+        justify-content: space-between;
+    }
+    .inner::after {
+        display: none;
+    }
+}
+

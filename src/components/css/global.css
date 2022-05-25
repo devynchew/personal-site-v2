@@ -1,0 +1,30 @@
+/* File to store all my global css variables. These can be accessed from any css files. */
+:root {
+    --font-anonymouse-pro: 'Anonymouse Pro', sans-serif;
+    --font-calibre: 'Calibre', sans-serif;
+    --font-montserrat: 'Montserrat', sans-serif;
+    --font-fira-code: 'Fira Code', sans-serif;
+    --font-fira-mono: 'Fira Mono', sans-serif;
+    --font-sora: 'Sora', sans-serif;
+    --font-big-heading: 'Calibre','Inter','San Francisco','SF Pro Text',-apple-system,system-ui,sans-serif;
+    --font-size-13: 13px;
+    --font-size-14: 14px;
+    --font-size-15: 15px;
+    --font-size-16: 16px;
+    --color-black: #1c1d25;
+    --color-white: #FFF;
+    --color-grey: #b0b2c3;
+    --color-dark-grey: #343a40;
+    --color-blue: #457b9d;
+    --color-dark-blue: #1d2d44;
+    --color-yellow: #ffca3a;
+    --color-light-yellow: #ffd166;
+    --color-orange: #ee6c4d;
+    --color-grey-hover: #343a40;
+
+}
+
+.button {
+    text-decoration: none;
+    cursor: pointer;
+}
