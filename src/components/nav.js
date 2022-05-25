@@ -50,9 +50,9 @@ const Nav = () => {
                         </li>
                     </ol>
                     <div className={nav.resumeButtonWrapper}>
-                        <Link to="/" className={nav.resumeButton}>
+                        <a href="Resume-Devyn.pdf" target="_blank" rel="noreferrer" aria-label="Resume" className={nav.resumeButton}>
                             Resume
-                        </Link>
+                        </a>
                     </div>
                 </div>
                 {/* isNavExpanded will toggle between true and false whenever the icon is clicked. */}
