@@ -82,6 +82,7 @@
     font-size: var(--font-size-14);
 }
 
+/* Project cards get displayed as a 2 col grid below 1285px screen-width */
 @media screen and (max-width: 1285px) {
     .grid {
         grid-template-columns: 1fr 1fr;
@@ -105,6 +106,7 @@
     }
 }
 
+/* Project cards get displayed as a 1 col grid layout below 768px screen-width */
 @media screen and (max-width: 768px) {
     .grid {
         grid-template-columns: 1fr;

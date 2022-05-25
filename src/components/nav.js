@@ -4,7 +4,7 @@ import * as nav from './css/nav.module.css'
 import { GiHamburgerMenu } from "@react-icons/all-files/gi/GiHamburgerMenu";
 
 
-// pageTitle is a normal prop, children is a children prop
+// Navbar component of the webpage, at the top.
 const Nav = () => {
     // Detect whether the hamburger menu is clicked on
     const [isNavExpanded, setIsNavExpanded] = React.useState(false)

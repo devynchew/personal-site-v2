@@ -1,7 +1,7 @@
 import * as React from 'react'
 import * as contact from './css/contact.module.css'
-import { Link } from 'gatsby'
 
+// Contact Component
 const Contact = () => {
 
     return (

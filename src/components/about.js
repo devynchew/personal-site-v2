@@ -3,6 +3,7 @@ import * as about from './css/about.module.css'
 import { FaCarrot } from "@react-icons/all-files/fa/FaCarrot";
 import { StaticImage } from "gatsby-plugin-image"
 
+// About Me component
 const About = () => {
 
     return (

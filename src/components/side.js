@@ -4,6 +4,7 @@ import { AiOutlineGithub } from "@react-icons/all-files/ai/AiOutlineGithub";
 import { AiFillLinkedin } from "@react-icons/all-files/ai/AiFillLinkedin";
 import { AiFillInstagram } from "@react-icons/all-files/ai/AiFillInstagram";
 
+// Side bar Component to store my social media links
 const Side = () => {
 
     return (

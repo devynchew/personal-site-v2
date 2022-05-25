@@ -36,6 +36,7 @@
     color: var(--color-light-yellow);
 }
 
+/* Social media icons get displayed at the bottom of the page below 1200px screen-width */
 @media screen and (max-width: 1200px) {
     .container {
         width: 200px;

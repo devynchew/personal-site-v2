@@ -2,6 +2,7 @@ import * as React from 'react'
 import { Link } from 'gatsby'
 import * as main from './css/main.module.css'
 
+// Main/front section of my webpage
 const Main = () => {
 
     return (

@@ -82,6 +82,7 @@
     background-color: var(--color-black);
 }
 
+/* Hamburger menu gets displayed when screen-width falls below 768px.*/
 @media screen and (max-width: 768px) {
     .hamburger {
         display: block;
@@ -91,6 +92,7 @@
         padding: 0px;
     }
 
+    /* Original top navbar gets hidden. */
     .nav-right {
         position: absolute;
         top: 60px;

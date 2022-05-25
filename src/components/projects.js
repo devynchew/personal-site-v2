@@ -8,11 +8,13 @@ import { VscGithubAlt } from "@react-icons/all-files/vsc/VscGithubAlt";
 
 const Projects = () => {
 
+  // GraphQL query to get data from the mdx files in my 'projects' folder
+  // Projects are sorted by the date of completion, the latest ones being shown first
   const data = useStaticQuery(graphql`
     query {
       allMdx(
         filter: {fileAbsolutePath: {regex: "/projects/"}}
-        sort: {fields: frontmatter___date, order: DESC}
+        sort: {fields: frontmatter___date, order: DESC} 
       ) {
         edges {
           node {
@@ -43,6 +45,7 @@ const Projects = () => {
       <h2>Projects Showcase</h2>
       <ul className={projects.grid}>
         {
+          // Project details are mapped from data queried and a project card is made for each project.
           data.allMdx.edges.map((edge) => (
             <li className={projects.outerCard} key={edge.id}>
               <a href={edge.node.frontmatter.link} target="_blank" rel="noreferrer" aria-label={edge.node.frontmatter.title}>

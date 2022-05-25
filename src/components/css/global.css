@@ -1,3 +1,4 @@
+/* File to store all my global css variables. These can be accessed from any css files. */
 :root {
     --font-anonymouse-pro: 'Anonymouse Pro', sans-serif;
     --font-calibre: 'Calibre', sans-serif;

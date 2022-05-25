@@ -3,8 +3,8 @@ import { useStaticQuery, graphql } from 'gatsby'
 import * as layout from './css/layout.module.css'
 
 
-// pageTitle is a normal prop, children is a children prop
-const Layout = ({ children }) => {
+// Component to render my page title
+const Layout = () => {
     const data = useStaticQuery(graphql`
     query {
         site {
@@ -17,7 +17,6 @@ const Layout = ({ children }) => {
     return (
         <div className={layout.container}>
             <title>{data.site.siteMetadata.title}</title>
-            {children}
         </div>
     )
 }
