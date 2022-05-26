@@ -1,7 +1,7 @@
 /* Homepage styles */
 .container {
     max-width: 1300px;
-    margin: 140px auto 0;
+    margin: 100px auto 0;
     padding: 100px 150px 0;
 }
 
@@ -50,6 +50,23 @@
 
 .find-out-button:hover {
     background: var(--color-grey-hover);
+}
+
+.svg-container {
+    max-width: 600px;
+    margin: 30px auto 0px;
+    position: relative;
+}
+
+.svg {
+    width: 100%;
+    height: auto;
+}
+
+@media screen and (max-width: 1200px) {
+    .find-out-button {
+        margin-bottom: 30px;
+    }
 }
 
 @media screen and (max-width: 768px) {

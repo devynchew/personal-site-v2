@@ -15,7 +15,7 @@ const Nav = () => {
     if (isBrowser) {
         var [screenWidth, setScreenWidth] = React.useState(window.innerWidth)
     }
-    
+
     // Change the state variable 'screenWidth' to the current window size whenever the window is resized
     React.useEffect(() => {
 
@@ -34,7 +34,10 @@ const Nav = () => {
     return (
         <header className={nav.header}>
             <nav className={nav.nav}>
-                <div>Logo
+                <div>
+                    <Link to="/" className={nav.navLinkText}>
+                        Logo
+                    </Link>
                 </div>
                 <div className={isNavExpanded && screenWidth < 768 ? nav.navRightExpanded : nav.navRight}>
                     <ol className={nav.navLinks}>

@@ -1,6 +1,6 @@
 .container {
     max-width: 900px;
-    margin: 300px auto 0px;
+    margin: 0px auto;
     padding: 100px 0px 0px;
 }
 
@@ -69,7 +69,21 @@
     .column {
         grid-template-columns: 1fr;
     }
+
     .right-column {
         margin: 0 auto;
+    }
+
+    .heading::after {
+        width: 100px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .skills {
+        display: grid;
+        grid-template-columns: 60% 40%;
+        padding: 0;
+        list-style: none;
     }
 }
