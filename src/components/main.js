@@ -5,19 +5,55 @@ import { motion } from 'framer-motion'
 
 // Main/front section of my webpage
 const Main = () => {
+    // Sets of pre-defined objects/variables
+    const textVariants = {
+        hidden: {
+            y: 10,
+            opacity: 0
+        },
+        visible: {
+            y: 0,
+            opacity: 1,
+            transition: { type: "tween", delay: 0.5, duration: 0.2 }
+        }
+    }
 
     return (
         <section className={main.container}>
-            <h1 className={main.smallHeading}>Hi, my name is</h1>
-            <h2 className={main.bigHeading}>Devyn Chew.</h2>
-            <h3 className={main.bigSecondaryHeading}>I love creating websites.</h3>
-            <p>I'm an aspiring web developer from Singapore. Currently, I'm focused on learning how to build accessible and human-centered ecommerce websites at Efusion Technology.</p>
-            <div>
+            <motion.h1 className={main.smallHeading}
+                variants={textVariants}
+                initial="hidden"
+                animate="visible"
+            >Hi, my name is</motion.h1>
+            <motion.h2 className={main.bigHeading}
+                initial={{ y: 10, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{ delay: 0.6, duration: 0.2, type: "tween" }}
+            >Devyn Chew.</motion.h2>
+            <motion.h3 className={main.bigSecondaryHeading}
+                initial={{ y: 10, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{ delay: 0.7, duration: 0.2, type: "tween" }}
+            >I love creating websites.</motion.h3>
+            <motion.p
+                initial={{ y: 10, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{ delay: 0.8, duration: 0.2, type: "tween" }}
+            >I'm an aspiring web developer from Singapore. Currently, I'm focused on learning how to build accessible and human-centered ecommerce websites at Efusion Technology.</motion.p>
+            <motion.div
+                initial={{ y: 10, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{ delay: 0.9, duration: 0.2, type: "tween" }}
+            >
                 <Link className={main.findOutButton} to="#about">
                     Find out more!
                 </Link>
-            </div>
-            <div className={main.svgContainer}>
+            </motion.div>
+            <motion.div className={main.svgContainer}
+                initial={{ y: 10, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{ delay: 1, duration: 0.2, type: "tween" }}
+            >
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="711.188"
@@ -232,7 +268,7 @@ const Main = () => {
                         ></path>
                     </g>
                 </svg>
-            </div>
+            </motion.div>
         </section>
     )
 }
