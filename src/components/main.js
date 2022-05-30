@@ -218,8 +218,9 @@ const Main = () => {
                             initial="hidden"
                             animate="visible"
                             transition={{
-                                yoyo: Infinity,
-                                duration: 0.5
+                                repeat: Infinity,
+                                duration: 0.3,
+                                repeatDelay: 1
                             }}
                         ></motion.path>
                         <motion.path
@@ -229,8 +230,9 @@ const Main = () => {
                             initial="hidden"
                             animate="visible"
                             transition={{
-                                yoyo: Infinity,
-                                duration: 0.3
+                                repeat: Infinity,
+                                duration: 0.9,
+                                repeatDelay: 0.7
                             }}
                         ></motion.path>
                         <motion.path
@@ -240,8 +242,9 @@ const Main = () => {
                             initial="hidden"
                             animate="visible"
                             transition={{
-                                yoyo: Infinity,
-                                duration: 1
+                                repeat: Infinity,
+                                duration: 0.7,
+                                repeatDelay: 0.6
                             }}
                         ></motion.path>
                         <motion.path
@@ -251,8 +254,9 @@ const Main = () => {
                             initial="hidden"
                             animate="visible"
                             transition={{
-                                yoyo: Infinity,
-                                duration: 1
+                                repeat: Infinity,
+                                duration: 0.8,
+                                repeatDelay: 0.7
                             }}
 
                         ></motion.path>
@@ -263,8 +267,9 @@ const Main = () => {
                             initial="hidden"
                             animate="visible"
                             transition={{
-                                yoyo: Infinity,
-                                duration: 1
+                                repeat: Infinity,
+                                duration: 0.9,
+                                repeatDelay: 0.5
                             }}
                         ></motion.path>
                         <motion.path
@@ -274,8 +279,9 @@ const Main = () => {
                             initial="hidden"
                             animate="visible"
                             transition={{
-                                yoyo: Infinity,
-                                duration: 1
+                                repeat: Infinity,
+                                duration: 1,
+                                repeatDelay: 0.6
                             }}
                         ></motion.path>
                         <motion.path
@@ -285,8 +291,9 @@ const Main = () => {
                             initial="hidden"
                             animate="visible"
                             transition={{
-                                yoyo: Infinity,
-                                duration: 1
+                                repeat: Infinity,
+                                duration: 1.1,
+                                repeatDelay: 0.75
                             }}
                         ></motion.path>
                         <motion.path
@@ -296,8 +303,9 @@ const Main = () => {
                             initial="hidden"
                             animate="visible"
                             transition={{
-                                yoyo: Infinity,
-                                duration: 1
+                                repeat: Infinity,
+                                duration: 1.2,
+                                repeatDelay: 0.8
                             }}
                         ></motion.path>
                         <motion.path
@@ -307,8 +315,9 @@ const Main = () => {
                             initial="hidden"
                             animate="visible"
                             transition={{
-                                yoyo: Infinity,
-                                duration: 1
+                                repeat: Infinity,
+                                duration: 1.3,
+                                repeatDelay: 0.8
                             }}
                         ></motion.path>
                         <motion.path
@@ -318,8 +327,9 @@ const Main = () => {
                             initial="hidden"
                             animate="visible"
                             transition={{
-                                yoyo: Infinity,
-                                duration: 1
+                                repeat: Infinity,
+                                duration: 1.4,
+                                repeatDelay: 0.65
                             }}
                         ></motion.path>
                         <motion.path
@@ -329,8 +339,9 @@ const Main = () => {
                             initial="hidden"
                             animate="visible"
                             transition={{
-                                yoyo: Infinity,
-                                duration: 1
+                                repeat: Infinity,
+                                duration: 1.5,
+                                repeatDelay: 0.6
                             }}
                         ></motion.path>
                         <motion.path
@@ -340,8 +351,9 @@ const Main = () => {
                             initial="hidden"
                             animate="visible"
                             transition={{
-                                yoyo: Infinity,
-                                duration: 1
+                                repeat: Infinity,
+                                duration: 1.6,
+                                repeatDelay: 0.5
                             }}
                         ></motion.path>
                         <motion.path
@@ -351,8 +363,9 @@ const Main = () => {
                             initial="hidden"
                             animate="visible"
                             transition={{
-                                yoyo: Infinity,
-                                duration: 1
+                                repeat: Infinity,
+                                duration: 1.7,
+                                repeatDelay: 0.7
                             }}
                         ></motion.path>
                         <motion.path
@@ -362,8 +375,9 @@ const Main = () => {
                             initial="hidden"
                             animate="visible"
                             transition={{
-                                yoyo: Infinity,
-                                duration: 1
+                                repeat: Infinity,
+                                duration: 1.8,
+                                repeatDelay: 0.4
                             }}
                         ></motion.path>
                         <motion.path
@@ -373,8 +387,9 @@ const Main = () => {
                             initial="hidden"
                             animate="visible"
                             transition={{
-                                yoyo: Infinity,
-                                duration: 1
+                                repeat: Infinity,
+                                duration: 1.9,
+                                repeatDelay: 0.8
                             }}
 
                         ></motion.path>
@@ -385,8 +400,9 @@ const Main = () => {
                             initial="hidden"
                             animate="visible"
                             transition={{
-                                yoyo: Infinity,
-                                duration: 1
+                                repeat: Infinity,
+                                duration: 1,
+                                repeatDelay: 0.25
                             }}
                         ></motion.path>
                         <motion.path
@@ -396,8 +412,9 @@ const Main = () => {
                             initial="hidden"
                             animate="visible"
                             transition={{
-                                yoyo: Infinity,
-                                duration: 1
+                                repeat: Infinity,
+                                duration: 0.5,
+                                repeatDelay: 0.55
                             }}
                         ></motion.path>
                         <motion.path
@@ -407,8 +424,9 @@ const Main = () => {
                             initial="hidden"
                             animate="visible"
                             transition={{
-                                yoyo: Infinity,
-                                duration: 1
+                                repeat: Infinity,
+                                duration: 0.7,
+                                repeatDelay: 0.25
                             }}
                         ></motion.path>
                     </g>
