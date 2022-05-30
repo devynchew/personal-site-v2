@@ -13,8 +13,7 @@ const Main = () => {
         },
         visible: {
             y: 0,
-            opacity: 1,
-            transition: { type: "tween", delay: 0.5, duration: 0.2 }
+            opacity: 1
         }
     }
 
@@ -24,35 +23,41 @@ const Main = () => {
                 variants={textVariants}
                 initial="hidden"
                 animate="visible"
+                transition={{ delay: 1.2, duration: 0.2, type: "tween" }}
             >Hi, my name is</motion.h1>
             <motion.h2 className={main.bigHeading}
-                initial={{ y: 10, opacity: 0 }}
-                animate={{ y: 0, opacity: 1 }}
-                transition={{ delay: 0.6, duration: 0.2, type: "tween" }}
+                variants={textVariants}
+                initial="hidden"
+                animate="visible"
+                transition={{ delay: 1.3, duration: 0.2, type: "tween" }}
             >Devyn Chew.</motion.h2>
             <motion.h3 className={main.bigSecondaryHeading}
-                initial={{ y: 10, opacity: 0 }}
-                animate={{ y: 0, opacity: 1 }}
-                transition={{ delay: 0.7, duration: 0.2, type: "tween" }}
+                variants={textVariants}
+                initial="hidden"
+                animate="visible"
+                transition={{ delay: 1.4, duration: 0.2, type: "tween" }}
             >I love creating websites.</motion.h3>
             <motion.p
-                initial={{ y: 10, opacity: 0 }}
-                animate={{ y: 0, opacity: 1 }}
-                transition={{ delay: 0.8, duration: 0.2, type: "tween" }}
+                variants={textVariants}
+                initial="hidden"
+                animate="visible"
+                transition={{ delay: 1.5, duration: 0.2, type: "tween" }}
             >I'm an aspiring web developer from Singapore. Currently, I'm focused on learning how to build accessible and human-centered ecommerce websites at Efusion Technology.</motion.p>
             <motion.div
-                initial={{ y: 10, opacity: 0 }}
-                animate={{ y: 0, opacity: 1 }}
-                transition={{ delay: 0.9, duration: 0.2, type: "tween" }}
+                variants={textVariants}
+                initial="hidden"
+                animate="visible"
+                transition={{ delay: 1.6, duration: 0.2, type: "tween" }}
             >
                 <Link className={main.findOutButton} to="#about">
                     Find out more!
                 </Link>
             </motion.div>
             <motion.div className={main.svgContainer}
-                initial={{ y: 10, opacity: 0 }}
-                animate={{ y: 0, opacity: 1 }}
-                transition={{ delay: 1, duration: 0.2, type: "tween" }}
+                variants={textVariants}
+                initial="hidden"
+                animate="visible"
+                transition={{ delay: 1.7, duration: 0.2, type: "tween" }}
             >
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
