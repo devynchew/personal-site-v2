@@ -17,6 +17,17 @@ const Main = () => {
         }
     }
 
+    const pathVariants = {
+        hidden: {
+            opacity: 0,
+            pathLength: 0
+        },
+        visible: {
+            opacity: 1,
+            pathLength: 1
+        }
+    }
+
     return (
         <section className={main.container}>
             <motion.h1 className={main.smallHeading}
@@ -198,83 +209,212 @@ const Main = () => {
                         fill="#2f2e41"
                         d="M34.366 124.98l-9.21-2.303s-18.418 5.756-23.022 29.93-1.151 120.87 4.604 122.02 28.428-16.836 32.057-13.023-7.883-15.755-4.43-26.115 0-110.51 0-110.51z"
                     ></path>
-                    <g fill="#ffd166" data-name="Group 13">
-                        <path
-                            d="M437.407 176.363H467.159V183.526H437.407z"
+                    {/* Computer screen code */}
+                    <g stroke="#ffd166" stroke-width="8" data-name="Group 13">
+                        <motion.path
+                            d="M437.407 176.363H467"
                             data-name="Rectangle 55"
-                        ></path>
-                        <path
-                            d="M559.722 176.363H570.1899999999999V183.526H559.722z"
-                            data-name="Rectangle 56"
-                        ></path>
-                        <path
-                            d="M580.659 176.363H591.127V183.526H580.659z"
-                            data-name="Rectangle 57"
-                        ></path>
-                        <path
-                            d="M477.628 176.363H548.703V183.526H477.628z"
+                            variants={pathVariants}
+                            initial="hidden"
+                            animate="visible"
+                            transition={{
+                                yoyo: Infinity,
+                                duration: 0.5
+                            }}
+                        ></motion.path>
+                        <motion.path
+                            d="M477.628 176.363H548"
                             data-name="Rectangle 58"
-                        ></path>
-                        <path
-                            d="M399.941 222.644H429.693V229.80700000000002H399.941z"
-                            data-name="Rectangle 59"
-                        ></path>
-                        <path
-                            d="M522.256 222.644H532.7239999999999V229.80700000000002H522.256z"
-                            data-name="Rectangle 60"
-                        ></path>
-                        <path
-                            d="M543.193 222.644H553.661V229.80700000000002H543.193z"
-                            data-name="Rectangle 61"
-                        ></path>
-                        <path
-                            d="M440.162 222.644H511.23699999999997V229.80700000000002H440.162z"
-                            data-name="Rectangle 62"
-                        ></path>
-                        <path
-                            d="M522.807 192.341H552.559V199.50400000000002H522.807z"
-                            data-name="Rectangle 63"
-                        ></path>
-                        <path
-                            d="M563.028 192.341H592.78V199.50400000000002H563.028z"
-                            data-name="Rectangle 64"
-                        ></path>
-                        <path
-                            d="M399.941 192.341H410.409V199.50400000000002H399.941z"
+                            variants={pathVariants}
+                            initial="hidden"
+                            animate="visible"
+                            transition={{
+                                yoyo: Infinity,
+                                duration: 0.3
+                            }}
+                        ></motion.path>
+                        <motion.path
+                            d="M559.722 176.363H570"
+                            data-name="Rectangle 56"
+                            variants={pathVariants}
+                            initial="hidden"
+                            animate="visible"
+                            transition={{
+                                yoyo: Infinity,
+                                duration: 1
+                            }}
+                        ></motion.path>
+                        <motion.path
+                            d="M580.659 176.363H591"
+                            data-name="Rectangle 57"
+                            variants={pathVariants}
+                            initial="hidden"
+                            animate="visible"
+                            transition={{
+                                yoyo: Infinity,
+                                duration: 1
+                            }}
+
+                        ></motion.path>
+                        <motion.path
+                            d="M399.941 192.341H410"
                             data-name="Rectangle 66"
-                        ></path>
-                        <path
-                            d="M420.878 192.341H431.346V199.50400000000002H420.878z"
+                            variants={pathVariants}
+                            initial="hidden"
+                            animate="visible"
+                            transition={{
+                                yoyo: Infinity,
+                                duration: 1
+                            }}
+                        ></motion.path>
+                        <motion.path
+                            d="M420.878 192.341H431"
                             data-name="Rectangle 67"
-                        ></path>
-                        <path
-                            d="M441.815 192.341H512.89V199.50400000000002H441.815z"
+                            variants={pathVariants}
+                            initial="hidden"
+                            animate="visible"
+                            transition={{
+                                yoyo: Infinity,
+                                duration: 1
+                            }}
+                        ></motion.path>
+                        <motion.path
+                            d="M441.815 192.341H512"
                             data-name="Rectangle 68"
-                        ></path>
-                        <path
-                            d="M461.099 207.768H490.851V214.931H461.099z"
-                            data-name="Rectangle 69"
-                        ></path>
-                        <path
-                            d="M420.878 207.768H450.63V214.931H420.878z"
-                            data-name="Rectangle 70"
-                        ></path>
-                        <path
-                            d="M399.941 207.768H410.409V214.931H399.941z"
+                            variants={pathVariants}
+                            initial="hidden"
+                            animate="visible"
+                            transition={{
+                                yoyo: Infinity,
+                                duration: 1
+                            }}
+                        ></motion.path>
+                        <motion.path
+                            d="M522.807 192.341H552"
+                            data-name="Rectangle 63"
+                            variants={pathVariants}
+                            initial="hidden"
+                            animate="visible"
+                            transition={{
+                                yoyo: Infinity,
+                                duration: 1
+                            }}
+                        ></motion.path>
+                        <motion.path
+                            d="M563.028 192.341H592"
+                            data-name="Rectangle 64"
+                            variants={pathVariants}
+                            initial="hidden"
+                            animate="visible"
+                            transition={{
+                                yoyo: Infinity,
+                                duration: 1
+                            }}
+                        ></motion.path>
+                        <motion.path
+                            d="M399.941 207.768H410"
                             data-name="Rectangle 71"
-                        ></path>
-                        <path
-                            d="M582.312 207.768H592.78V214.931H582.312z"
-                            data-name="Rectangle 73"
-                        ></path>
-                        <path
-                            d="M500.768 207.768H571.843V214.931H500.768z"
+                            variants={pathVariants}
+                            initial="hidden"
+                            animate="visible"
+                            transition={{
+                                yoyo: Infinity,
+                                duration: 1
+                            }}
+                        ></motion.path>
+                        <motion.path
+                            d="M420.878 207.768H450"
+                            data-name="Rectangle 70"
+                            variants={pathVariants}
+                            initial="hidden"
+                            animate="visible"
+                            transition={{
+                                yoyo: Infinity,
+                                duration: 1
+                            }}
+                        ></motion.path>
+                        <motion.path
+                            d="M461.099 207.768H490"
+                            data-name="Rectangle 69"
+                            variants={pathVariants}
+                            initial="hidden"
+                            animate="visible"
+                            transition={{
+                                yoyo: Infinity,
+                                duration: 1
+                            }}
+                        ></motion.path>
+                        <motion.path
+                            d="M500.768 207.768H571"
                             data-name="Rectangle 74"
-                        ></path>
+                            variants={pathVariants}
+                            initial="hidden"
+                            animate="visible"
+                            transition={{
+                                yoyo: Infinity,
+                                duration: 1
+                            }}
+                        ></motion.path>
+                        <motion.path
+                            d="M582.312 207.768H592"
+                            data-name="Rectangle 73"
+                            variants={pathVariants}
+                            initial="hidden"
+                            animate="visible"
+                            transition={{
+                                yoyo: Infinity,
+                                duration: 1
+                            }}
+                        ></motion.path>
+                        <motion.path
+                            d="M399.941 222.644H429"
+                            data-name="Rectangle 59"
+                            variants={pathVariants}
+                            initial="hidden"
+                            animate="visible"
+                            transition={{
+                                yoyo: Infinity,
+                                duration: 1
+                            }}
+
+                        ></motion.path>
+                        <motion.path
+                            d="M440.162 222.644H511"
+                            data-name="Rectangle 62"
+                            variants={pathVariants}
+                            initial="hidden"
+                            animate="visible"
+                            transition={{
+                                yoyo: Infinity,
+                                duration: 1
+                            }}
+                        ></motion.path>
+                        <motion.path
+                            d="M522.256 222.644H532"
+                            data-name="Rectangle 60"
+                            variants={pathVariants}
+                            initial="hidden"
+                            animate="visible"
+                            transition={{
+                                yoyo: Infinity,
+                                duration: 1
+                            }}
+                        ></motion.path>
+                        <motion.path
+                            d="M543.193 222.644H553"
+                            data-name="Rectangle 61"
+                            variants={pathVariants}
+                            initial="hidden"
+                            animate="visible"
+                            transition={{
+                                yoyo: Infinity,
+                                duration: 1
+                            }}
+                        ></motion.path>
                     </g>
                 </svg>
             </motion.div>
-        </section>
+        </section >
     )
 }
 export default Main
