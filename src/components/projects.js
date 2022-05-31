@@ -3,6 +3,7 @@ import * as projects from './css/projects.module.css'
 import { useStaticQuery, graphql } from 'gatsby'
 import { GatsbyImage } from 'gatsby-plugin-image'
 import { VscGithubAlt } from "@react-icons/all-files/vsc/VscGithubAlt";
+import { motion } from 'framer-motion'
 
 
 
@@ -40,6 +41,16 @@ const Projects = () => {
     }
   `)
 
+  const hoverVariants = {
+    hover: {
+      y: -8,
+      transition: {
+        type: "tween",
+        damping: 30
+      }
+    }
+  }
+
   return (
     <section id='projects' className={projects.container}>
       <h2>Projects Showcase</h2>
@@ -47,7 +58,10 @@ const Projects = () => {
         {
           // Project details are mapped from data queried and a project card is made for each project.
           data.allMdx.edges.map((edge) => (
-            <li className={projects.outerCard} key={edge.id}>
+            <motion.li className={projects.outerCard} key={edge.id}
+            variants={hoverVariants}
+            whileHover="hover"
+            >
               <a href={edge.node.frontmatter.link} target="_blank" rel="noreferrer" aria-label={edge.node.frontmatter.title}>
                 <div className={projects.card}>
                   <header>
@@ -73,7 +87,7 @@ const Projects = () => {
                 </div>
               </a>
 
-            </li>
+            </motion.li>
           ))
         }
       </ul>

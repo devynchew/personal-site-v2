@@ -30,8 +30,8 @@ const Main = () => {
 
     const mouseVariants = {
         moving: {
-            x: [0, 15],
-            y: [0, 1],
+            x: [0, 9],
+            y: [0, -0.3],
             transition: {
                 yoyo: Infinity,
                 duration: 1.5
