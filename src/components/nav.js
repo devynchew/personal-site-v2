@@ -3,6 +3,7 @@ import { Link } from 'gatsby'
 import * as nav from './css/nav.module.css'
 import { GiHamburgerMenu } from "@react-icons/all-files/gi/GiHamburgerMenu";
 import { motion } from 'framer-motion'
+import { StaticImage } from "gatsby-plugin-image"
 
 // Fix the 'Gatsby window not available during server side rendering build' error
 let defaultWidth
@@ -55,9 +56,7 @@ const Nav = () => {
                     animate="visible"
                     transition={{ delay: 0.1, duration: 0.4, type: "tween" }}
                 >
-                    <Link to="/" className={nav.navLinkText}>
-                        Logo
-                    </Link>
+                    <StaticImage src="../images/devyn-logo.png" alt="Devyn's logo" className={nav.devynLogo}/>
                 </motion.div>
                 <div className={isNavExpanded && screenWidth < 768 ? nav.navRightExpanded : nav.navRight}>
                     <ol className={nav.navLinks}>

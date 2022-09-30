@@ -2,7 +2,7 @@
 
 .header {
     width: 100%;
-    height: 75px;
+    height: 90px;
     position: fixed;
     top: 0;
     display: flex;
@@ -17,6 +17,12 @@
 .nav {
     composes: header;
     position: relative;
+}
+
+.devyn-logo {
+    width: 100px;
+    height: auto;
+    margin-top: 0px;
 }
 
 .nav-right {
