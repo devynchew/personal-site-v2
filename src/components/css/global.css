@@ -24,6 +24,11 @@
 
 }
 
+html {
+    cursor: default;
+    caret-color: transparent;
+}
+
 .button {
     text-decoration: none;
     cursor: pointer;
