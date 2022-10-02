@@ -75,7 +75,7 @@ const Main = () => {
                 initial="hidden"
                 animate="visible"
                 transition={{ delay: 1.5, duration: 0.2, type: "tween" }}
-            >I'm an aspiring web developer from Singapore. Currently, I'm focused on learning how to build accessible and human-centered ecommerce websites at Efusion Technology.</motion.p>
+            >I'm an aspiring web developer from Singapore. Currently, I'm in my final year of study in Singapore Polytechnic. My dream is to be able to create professional and beautiful-looking websites.</motion.p>
             <motion.div
                 variants={textVariants}
                 initial="hidden"
