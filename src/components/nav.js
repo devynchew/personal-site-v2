@@ -56,7 +56,7 @@ const Nav = () => {
                     animate="visible"
                     transition={{ delay: 0.1, duration: 0.4, type: "tween" }}
                 >
-                    <StaticImage src="../images/devyn-logo.png" alt="Devyn's logo" className={nav.devynLogo}/>
+                    {/* <StaticImage src="../images/devyn-logo.png" alt="Devyn's logo" className={nav.devynLogo}/> */}
                 </motion.div>
                 <div className={isNavExpanded && screenWidth < 768 ? nav.navRightExpanded : nav.navRight}>
                     <ol className={nav.navLinks}>
