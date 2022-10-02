@@ -53,7 +53,7 @@ const Projects = () => {
 
   return (
     <section id='projects' className={projects.container}>
-      <h2>Projects Showcase</h2>
+      <h2 className={projects.heading}>Projects Showcase</h2>
       <ul className={projects.grid}>
         {
           // Project details are mapped from data queried and a project card is made for each project.
