@@ -43,7 +43,7 @@ const Projects = () => {
 
   const hoverVariants = {
     hover: {
-      y: -8,
+      y: -5,
       transition: {
         type: "tween",
         damping: 30
